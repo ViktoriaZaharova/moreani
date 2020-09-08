@@ -469,3 +469,14 @@ $(window).load(function(  ) {
         return false;
     });
 });
+
+// кнопка показать еще
+$('.load-more').on('click', function (e) {
+    e.preventDefault();
+    $('.table-orders .tbody .tr:hidden').slice(0, 5).slideDown();
+
+    var onBlock = $('.table-orders .tbody .tr:hidden').length;
+    if(onBlock <= 0) {
+        $('.load-more').hide();
+    }
+});

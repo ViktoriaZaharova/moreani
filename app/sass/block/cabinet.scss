@@ -248,6 +248,81 @@ svg path {
   margin: 0 0 10px;
 }
 
+.table-responsive {
+  width: 100%;
+}
+
+.table-orders {
+  width: 100%;
+  color: #58595B;
+  font-size: 16px;
+  .thead {
+    background: #F2F5FA;
+    border-radius: 3px;
+    color: rgba(88, 89, 91, 0.7);
+    font-weight: normal;
+
+  }
+
+  .tr {
+
+
+    &:nth-child(even) {
+      background: #F2F5FA;
+      border-radius: 3px;
+    }
+
+
+  }
+
+  .th, .td {
+    padding: 13px 5px 13px;
+    font-weight: normal;
+    display: inline-block;
+    &:first-child {
+      width: 27%;
+      padding: 13px 10px 13px 30px;
+    }
+    &:nth-child(2) {
+      width: 17%;
+    }
+    &:nth-child(3) {
+      width: 21%;
+    }
+    &:nth-child(4) {
+      width: 17%;
+    }
+  }
+
+  .tbody {
+    .tr {
+      display: none;
+
+      &:nth-child(-n+10) {
+        display: block;
+      }
+    }
+  }
+}
+
+.link-view-check {
+  color: #58595B;
+  &:hover {
+    color: #003DA6;
+  }
+}
+
+.load-more {
+  margin: 23px 95px 0 auto;
+  color: #003DA6;
+  display: block;
+  width: fit-content;
+
+  &:hover {
+    color: #58595B;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .cabinet-box {
     width: 270px;
@@ -281,6 +356,10 @@ svg path {
       font-size: 16px;
     }
   }
+
+  .load-more {
+    margin: 23px 50px 0 auto;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -313,6 +392,15 @@ svg path {
 
   .form-profile__item {
     width: 280px;
+  }
+
+  .load-more {
+    margin: 23px 30px 0 auto;
+    font-size: 14px;
+  }
+
+  .table-orders {
+    font-size: 14px;
   }
 }
 
@@ -357,6 +445,22 @@ svg path {
 
   .form-input__title {
     font-size: 14px;
+  }
+
+  .table-orders {
+    min-width: 700px;
+  }
+
+  .table-orders .th:nth-child(2), .table-orders .td:nth-child(2) {
+    width: 13%;
+  }
+
+  .table-orders .th:first-child, .table-orders .td:first-child {
+    width: 30%;
+  }
+
+  .load-more {
+    margin-right: 0;
   }
 }
 
