@@ -108,8 +108,10 @@ gulp.task('scripts', function(done) {
         'app/js/scripts/jquery-ui.js',
         'app/js/scripts/perfect-scrollbar.jquery.js',
         'app/js/scripts/owl.carousel.js',
+        'app/js/scripts/jquery.sliderPro.min.js',
         'app/js/scripts/priority-nav.js',
         'app/js/scripts/svgxuse.js',
+        'app/js/scripts/readmore.js',
         'app/js/scripts/common.js'
     ])
         .pipe(concat('scrips.min.js')) // Собираем их в кучу в новом файле libs.min.js

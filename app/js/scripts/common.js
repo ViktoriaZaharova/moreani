@@ -180,8 +180,6 @@ $(document).ready(function(  ) {
         }
     });
 
-
-
     // Фикс шапка
     /*
     $(window).scroll(function(){
