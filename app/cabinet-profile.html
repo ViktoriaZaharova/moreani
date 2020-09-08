@@ -267,7 +267,7 @@
                     class="breadcrumps__item">Профиль</span></div>
 
             <ul class="menu-profile">
-                <li class="active">
+                <li>
                     <a href="#profile-section" class="menu-profile__links" data-toggle="tab">
                         <svg class="menu-profile__icon">
                             <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon5"></use>
@@ -283,15 +283,15 @@
                         <span class="menu-profile__text">Электронные чеки</span>
                     </a>
                 </li>
-<!--                <li>-->
-<!--                    <a href="#" class="menu-profile__links" data-toggle="tab">-->
-<!--                        <svg class="menu-profile__icon fill-none">-->
-<!--                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon2"></use>-->
-<!--                        </svg>-->
-<!--                        <span class="menu-profile__text">Избранное</span>-->
-<!--                    </a>-->
-<!--                </li>-->
-                <li>
+                <!--                <li>-->
+                <!--                    <a href="#" class="menu-profile__links" data-toggle="tab">-->
+                <!--                        <svg class="menu-profile__icon fill-none">-->
+                <!--                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon2"></use>-->
+                <!--                        </svg>-->
+                <!--                        <span class="menu-profile__text">Избранное</span>-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <li class="active">
                     <a href="#history-orders" class="menu-profile__links" data-toggle="tab">
                         <svg class="menu-profile__icon">
                             <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon3"></use>
@@ -311,7 +311,7 @@
             </ul>
 
             <div class="tab-content">
-                <div class="tab-pane fade show active in" id="profile-section">
+                <div class="tab-pane fade" id="profile-section">
                     <div class="h1">Профиль</div>
                     <div class="profile-section">
                         <div class="profile-photo"><img src="img/photo-user.png" alt=""></div>
@@ -367,7 +367,7 @@
                 </div>
 
                 <div class="tab-pane fade" id="cabinet-orders">
-                    <h1 class="h1">Электронные чеки</h1>
+                    <div class="h1">Электронные чеки</div>
 
                     <div class="table-responsive">
                         <div class="table-orders">
@@ -508,7 +508,7 @@
                     <a href="#" class="load-more">Показать еще</a>
                 </div>
 
-                <div class="tab-pane fade" id="history-orders">
+                <div class="tab-pane fade show active in" id="history-orders">
                     <div class="h1">Заказ № 3313413, создан 19.08.2020</div>
 
                     <div class="history-orders">
@@ -517,9 +517,101 @@
                         <div class="history-orders__details">
                             <div class="history-orders__details-item">
                                 <div class="history-orders__details-title">Заказ № 3313413, создан 19.08.2020</div>
+
+                                <div class="history-orders__details-item-wrapper">
+                                    <div class="history-orders__details-content">
+
+                                        <div class="history-orders__details-line">
+                                            <div class="name-customer">Константин
+                                                Константинопольский
+                                            </div>
+
+                                            <div class="status-orders">
+                                                <p>Принят,</p>
+                                                <span>ожидается оплата</span>
+                                            </div>
+
+                                            <div class="date-orders">18.08.2020</div>
+
+                                            <div class="sum-orders">
+                                                <p>1299 ₽</p>
+                                                <span>сумма</span>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="links-light-blue links-orders-history-details">Подробнее</a>
+                                    </div>
+
+                                    <div class="button-group">
+                                        <a href="#" class="btn-blue btn-pay-order">Оплатить заказ</a>
+                                        <a href="#" class="canceling-btn">
+                                            Отменить
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="parameters-orders">
+                                <div class="parameters-orders__title">Параметры оплаты</div>
+
+                                <div class="parameters-orders__box">
+                                    <div class="parameters-orders__icon">
+                                        <svg class="parameters-orders__svg">
+                                            <use xlink:href="img/svg-sprite/main-sprite.svg#orders-icon1"></use>
+                                        </svg>
+                                    </div>
+
+                                    <div class="parameters-orders__box-content">
+                                        <div class="parameters-orders__name">
+                                            <p>Заказ №4 от 19.08.2020. Принят, ожидается оплата</p>
+                                        </div>
+                                        <div class="parameters-orders__sum">Сумма к оплате: 1299 ₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="parameters-orders__box">
+                                    <div class="parameters-orders__icon">
+                                        <svg class="parameters-orders__svg">
+                                            <use xlink:href="img/svg-sprite/main-sprite.svg#orders-icon2"></use>
+                                        </svg>
+                                    </div>
+
+                                    <div class="parameters-orders__box-content">
+                                        <div class="parameters-orders__name">
+                                            <p>Счет №4/1 от 19.08.2020. Наличные курьеру</p>
+                                            <div class="parameters-orders__status bg-light-pink">Не оплачено</div>
+                                        </div>
+                                        <div class="parameters-orders__sum">Сумма к оплате: 1299 ₽</div>
+
+                                        <a href="#" class="links-light-blue">Сменить способ оплаты</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parameters-orders">
+                                <div class="parameters-orders__title">Параметры отгрузки</div>
+
+                                <div class="parameters-orders__box">
+                                    <div class="parameters-orders__icon">
+                                        <svg class="parameters-orders__svg">
+                                            <use xlink:href="img/svg-sprite/main-sprite.svg#orders-icon3"></use>
+                                        </svg>
+                                    </div>
+
+                                    <div class="parameters-orders__box-content">
+                                        <div class="parameters-orders__name">
+                                            <p>Отгрузка №4/2, стоимость доставки 0 ₽</p>
+                                        </div>
+                                        <div class="parameters-orders__sum">Статус отгрузки: Ожидает обработки</div>
+                                        <a href="#" class="links-light-blue">Показать все</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="tab-pane fade" id="cabinet-callback"></div>
