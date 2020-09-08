@@ -266,97 +266,264 @@
                 кабинет</a><span
                     class="breadcrumps__item">Профиль</span></div>
 
-            <div class="menu-profile">
-                <a href="#" class="menu-profile__links active">
-                    <svg class="menu-profile__icon">
-                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon5"></use>
-                    </svg>
-                    <span class="menu-profile__text">Профиль</span>
-                </a>
+            <ul class="menu-profile">
+                <li class="active">
+                    <a href="#profile-section" class="menu-profile__links" data-toggle="tab">
+                        <svg class="menu-profile__icon">
+                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon5"></use>
+                        </svg>
+                        <span class="menu-profile__text">Профиль</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#cabinet-orders" class="menu-profile__links" data-toggle="tab">
+                        <svg class="menu-profile__icon">
+                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon1"></use>
+                        </svg>
+                        <span class="menu-profile__text">Электронные чеки</span>
+                    </a>
+                </li>
+<!--                <li>-->
+<!--                    <a href="#" class="menu-profile__links" data-toggle="tab">-->
+<!--                        <svg class="menu-profile__icon fill-none">-->
+<!--                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon2"></use>-->
+<!--                        </svg>-->
+<!--                        <span class="menu-profile__text">Избранное</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+                <li>
+                    <a href="#history-orders" class="menu-profile__links" data-toggle="tab">
+                        <svg class="menu-profile__icon">
+                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon3"></use>
+                        </svg>
+                        <span class="menu-profile__text">История заказов</span>
+                    </a>
+                </li>
 
-                <a href="#" class="menu-profile__links">
-                    <svg class="menu-profile__icon">
-                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon1"></use>
-                    </svg>
-                    <span class="menu-profile__text">Электронные чеки</span>
-                </a>
+                <li>
+                    <a href="#cabinet-callback" class="menu-profile__links" data-toggle="tab">
+                        <svg class="menu-profile__icon">
+                            <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon4"></use>
+                        </svg>
+                        <span class="menu-profile__text">Обратная связь</span>
+                    </a>
+                </li>
+            </ul>
 
-                <a href="#" class="menu-profile__links">
-                    <svg class="menu-profile__icon fill-none">
-                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon2"></use>
-                    </svg>
-                    <span class="menu-profile__text">Избранное</span>
-                </a>
+            <div class="tab-content">
+                <div class="tab-pane fade show active in" id="profile-section">
+                    <div class="h1">Профиль</div>
+                    <div class="profile-section">
+                        <div class="profile-photo"><img src="img/photo-user.png" alt=""></div>
 
-                <a href="#" class="menu-profile__links">
-                    <svg class="menu-profile__icon">
-                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon3"></use>
-                    </svg>
-                    <span class="menu-profile__text">История заказов</span>
-                </a>
+                        <form class="form-profile" method="post">
+                            <div class="form-profile__item">
+                                <div class="profile-box__title">Персональные данные</div>
 
-                <a href="#" class="menu-profile__links">
-                    <svg class="menu-profile__icon">
-                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon4"></use>
-                    </svg>
-                    <span class="menu-profile__text">Обратная связь</span>
-                </a>
-            </div>
-            <h1 class="h1">Профиль</h1>
+                                <div class="profile-box__wrap">
+                                    <label>
+                                        <span class="form-input__title">Фамилия</span>
+                                        <input type="text" name="fist_name" placeholder="Константинопольский">
+                                    </label>
 
+                                    <label>
+                                        <span class="form-input__title">Имя</span>
+                                        <input type="text" name="name" placeholder="Александр">
+                                    </label>
 
-            <div class="profile-section">
-                <div class="profile-photo"><img src="img/photo-user.png" alt=""></div>
+                                    <label>
+                                        <span class="form-input__title">E-mail</span>
+                                        <input type="text" name="mail" placeholder="e-mail@com">
+                                    </label>
 
-                <form class="form-profile" method="post">
-                    <div class="form-profile__item">
-                        <div class="profile-box__title">Персональные данные</div>
+                                    <label>
+                                        <span class="form-input__title">Телефон</span>
+                                        <input type="text" name="phone" placeholder="+7 900 800 00 00">
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class="profile-box__wrap">
-                            <label>
-                                <span class="form-input__title">Фамилия</span>
-                                <input type="text" name="fist_name" placeholder="Константинопольский">
-                            </label>
+                            <div class="form-profile__item">
+                                <div class="profile-box__title">Сменить пароль</div>
 
-                            <label>
-                                <span class="form-input__title">Имя</span>
-                                <input type="text" name="name" placeholder="Александр">
-                            </label>
+                                <div class="profile-box__wrap">
+                                    <label>
+                                        <span class="form-input__title">Пароль</span>
+                                        <input type="text" name="password" placeholder="••••••••••••••">
+                                    </label>
 
-                            <label>
-                                <span class="form-input__title">E-mail</span>
-                                <input type="text" name="mail" placeholder="e-mail@com">
-                            </label>
+                                    <label>
+                                        <span class="form-input__title">Подтвердить пароль</span>
+                                        <input type="text" name="password" placeholder="••••••••••••••">
+                                    </label>
 
-                            <label>
-                                <span class="form-input__title">Телефон</span>
-                                <input type="text" name="phone" placeholder="+7 900 800 00 00">
-                            </label>
+                                    <button type="submit" class="btn-blue contact-tab__btn">Сменить пароль</button>
+                                </div>
+
+                                <a href="#" class="btn-add-fav tov-btn-row__btn-2">Выйти</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="cabinet-orders">
+                    <h1 class="h1">Электронные чеки</h1>
+
+                    <div class="table-responsive">
+                        <div class="table-orders">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th">Дата создания чека</div>
+                                    <div class="th">Сумма</div>
+                                    <div class="th">Тип операции</div>
+                                    <div class="th">Чек</div>
+                                    <div class="th">Оплата</div>
+                                </div>
+                            </div>
+
+                            <div class="tbody">
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">25 августа 2020 в 21:16</div>
+                                    <div class="td">520 ₽</div>
+                                    <div class="td">Яндекс-доставки</div>
+                                    <div class="td"><a href="#" class="link-view-check">Посмотреть чек</a></div>
+                                    <div class="td">Картой</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <a href="#" class="load-more">Показать еще</a>
+                </div>
 
-                    <div class="form-profile__item">
-                        <div class="profile-box__title">Сменить пароль</div>
+                <div class="tab-pane fade" id="history-orders">
+                    <div class="h1">Заказ № 3313413, создан 19.08.2020</div>
 
-                        <div class="profile-box__wrap">
-                            <label>
-                                <span class="form-input__title">Пароль</span>
-                                <input type="text" name="password" placeholder="••••••••••••••">
-                            </label>
+                    <div class="history-orders">
+                        <a href="#" class="links-blue">Вернуться в список заказов</a>
 
-                            <label>
-                                <span class="form-input__title">Подтвердить пароль</span>
-                                <input type="text" name="password" placeholder="••••••••••••••">
-                            </label>
-
-                            <button type="submit" class="btn-blue contact-tab__btn">Сменить пароль</button>
+                        <div class="history-orders__details">
+                            <div class="history-orders__details-item">
+                                <div class="history-orders__details-title">Заказ № 3313413, создан 19.08.2020</div>
+                            </div>
                         </div>
-
-                        <a href="#" class="btn-add-fav tov-btn-row__btn-2">Выйти</a>
                     </div>
-                </form>
-            </div>
+                </div>
 
+                <div class="tab-pane fade" id="cabinet-callback"></div>
+            </div>
 
         </div>
     </div>

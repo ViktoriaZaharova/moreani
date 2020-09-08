@@ -106,6 +106,19 @@
   border-radius: 3px;
   padding: 7px 40px;
   margin: 0 0 30px;
+  li {
+    flex: auto;
+  }
+
+  .active {
+    .menu-profile__links {
+      color: #0050DB;
+
+      .menu-profile__icon {
+        fill: #0050DB;
+      }
+    }
+  }
 }
 
 .menu-profile__links {
@@ -129,13 +142,7 @@
   }
 }
 
-.menu-profile__links.active {
-  color: #0050DB;
 
-  .menu-profile__icon {
-    fill: #0050DB;
-  }
-}
 
 .menu-profile__icon {
   width: 34px;
@@ -321,6 +328,10 @@ svg path {
   &:hover {
     color: #58595B;
   }
+}
+
+.links-blue {
+  color: #003DA6
 }
 
 @media screen and (max-width: 1199px) {
