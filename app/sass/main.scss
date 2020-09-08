@@ -1,0 +1,41 @@
+@import 'block/variables';
+@import 'libs/placeholder';
+@import 'libs/perfect-scrollbar.min';
+@import 'libs/fonts';
+@import 'libs/bootstrap';
+@import 'libs/animate';
+@import 'libs/jquery-ui';
+
+@import 'libs/priority-nav-core';
+@import 'libs/nav-main';
+
+//@import 'libs/bootstrap-yii';
+//@import 'libs/jquery-ui-bootstrap';
+@import 'libs/owl.carousel';
+@import 'libs/select2.min';
+//@import 'libs/swiper.min';
+//@import 'libs/fancybox/jquery.fancybox';
+//@import 'libs/fancybox/jquery.fancybox-buttons';
+//@import 'libs/fancybox/jquery.fancybox-thumbs';
+//@import 'libs/croppic';
+//@import 'libs/croppic_main';
+//@import 'libs/bootstrap-datetimepicker.min';
+@import 'libs/slider-pro.min';
+//@import 'libs/flexslid.more_filter_btner';
+
+
+@import 'block/default';
+@import 'block/mobile-menu';
+@import 'block/buttons';
+
+@import 'block/header';
+@import 'block/main-page';
+@import 'block/catalog-page';
+@import 'block/tovar';
+@import 'block/cabinet';
+
+
+//@import 'block/form';
+//@import 'block/modal';
+
+@import 'block/footer';

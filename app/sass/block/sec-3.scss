@@ -1,0 +1,360 @@
+.sec-3{
+    width: 100%;
+    padding-top: 57px;
+    background: #fff;
+}
+
+.gal{
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #1f97d7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &__svg{
+        fill: #fff;
+        width: 15px;
+        height: 14px;
+    }
+}
+.cross{
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #dddddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &__svg{
+        fill: #fff;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.c-tarif{
+    &__h2{
+        max-width: 376px;
+    }
+    &__btn-row{
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+    &__btn-calc{
+        font-size: 16px;
+        font-weight: 600;
+        height: 50px;
+        width: 586px;
+    }
+}
+
+.c-tarif-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-top: 100px;
+    margin-top: -100px;
+    &__title{
+        width: calc(50% - 12px);
+    }
+    &__desc{
+        font-size: 18px;
+        width: calc(50% - 12px);
+        color: #4e4e4e;
+        line-height: 30px;
+        position: relative;
+        padding-top: 29px;
+        margin-top: 10px;
+        &:before{
+            height: 2px;
+            width: 40px;
+            background: #96ceec;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.table-tarif{
+    width: 100%;
+    margin-bottom: 0;
+    &__btn{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    thead{
+        th{
+            font-size: 18px;
+            font-weight: 500;
+            color: #232323;
+            padding: 18px 20px;
+            background: #f9f9f9;
+            &:first-child{
+                width: 550px;
+            }
+        }
+    }
+    tbody{
+        td{
+            font-size: 16px;
+            color: #303030;
+            line-height: 24px;
+            padding: 15px 20px;
+            min-height: 60px;
+            &:first-child{
+                width: 550px;
+            }
+        }
+        tr{
+            &:nth-child(2n){
+                background: #f9f9f9;
+            }
+        }
+    }
+    tfoot{
+        &.change-color{
+            .table-tarif__btn{
+                margin-top: 15px;
+            }
+            tr{
+                background: #f9f9f9;
+                &:nth-child(2n){
+                    background: #fff;
+                }
+            }
+        }
+        td{
+            font-size: 18px;
+            font-weight: 500;
+            color: #232323;
+            padding: 18px 20px;
+            white-space: nowrap;
+            &:first-child{
+
+            }
+        }
+        tr{
+            background: #fff;
+            &:nth-child(2n){
+                background: #f9f9f9;
+            }
+        }
+    }
+    .hidden-row{
+        display: none;
+    }
+    .bg-white{
+        background: #fff !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px){
+    .c-tarif-header{
+
+        &__title{
+
+        }
+        &__desc{
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 10px;
+        }
+    }
+
+}
+@media screen and (max-width: 1250px){
+    .table-tarif{
+        &__btn{
+            margin-top: 10px;
+            height: 40px;
+        }
+        thead{
+            th{
+                font-size: 16px;
+                font-weight: 500;
+                color: #232323;
+                padding: 13px 20px;
+                background: #f9f9f9;
+                &:first-child{
+                    max-width: 320px;
+                    width: 100%;
+                }
+            }
+        }
+        tbody{
+            td{
+                font-size: 14px;
+                color: #303030;
+                line-height: 24px;
+                padding: 13px 20px;
+                min-height: 60px;
+                &:first-child{
+                    max-width: 320px;
+                    width: 100%;
+                }
+            }
+        }
+        tfoot{
+            td{
+                font-size: 16px;
+                font-weight: 500;
+                color: #232323;
+                padding: 13px 20px;
+                white-space: nowrap;
+                &:first-child{
+
+                }
+            }
+        }
+
+    }
+
+
+    .c-tarif{
+
+        &__btn-row{
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+        &__btn-calc{
+            width: 462px;
+        }
+    }
+
+
+}
+@media screen and (max-width: 993px){
+
+
+}
+
+@media screen and (max-width: 768px){
+    .table-tarif{
+        min-width: 600px;
+        &__btn{
+
+        }
+        thead{
+            th{
+                font-size: 14px;
+                padding: 10px 10px;
+                &:first-child{
+                    max-width: 320px;
+                    width: 100%;
+                }
+            }
+        }
+        tbody{
+            td{
+                font-size: 14px;
+                color: #303030;
+                line-height: 24px;
+                padding: 10px 10px;
+                min-height: 60px;
+                &:first-child{
+                    max-width: 320px;
+                    width: 100%;
+                }
+            }
+        }
+        tfoot{
+            td{
+                font-size: 14px;
+                font-weight: 500;
+                color: #232323;
+                padding: 10px 10px;
+                white-space: nowrap;
+                &:first-child{
+
+                }
+            }
+        }
+
+    }
+    .responsive-table{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .c-tarif-header{
+        flex-flow: column;
+        &__title{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__desc{
+            width: 100%;
+            color: #4e4e4e;
+            margin-top: 0;
+        }
+    }
+
+    .c-tarif{
+
+        &__btn-row{
+            justify-content: center;
+            padding-top: 30px;
+        }
+        &__btn-calc{
+            width: auto;
+        }
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+}
+
+@media screen and (max-width: 500px){
+
+
+}
+
+@media screen and (max-width: 440px){
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+
+}
+
+@media screen and (max-width: 400px){
+
+
+
+}
+
+@media screen and (max-width: 320px){
+
+
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Каталог</title>
+    <meta name="description" content="">
+    <meta name="author" content="Снисаренко Игорь">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="loading">
+<!-- Мобильный поиск-->
+<div class="mobile-search-form">
+    <div class="mobile-search-form__logo"><img src="img/logo.svg" alt=""></div>
+    <button class="close-modal-search" type="button" data-dismiss="modal">
+        <svg class="icon icon-close_big close-modal-search__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#close_big"></use>
+        </svg>
+    </button>
+    <form class="mobile-search-form-c" action="" method="">
+        <input class="m-search-input mobile-search-form__input" type="text" placeholder="Я ищу">
+        <button class="btn-blue mobile-search-form__btn" type="button">Найти</button>
+    </form>
+</div>
+<!-- Моббильное меню-->
+<div class="mobile_menu close_menu scroll">
+    <div class="working-time">
+        <div class="working-time__calendar">
+            <div class="working-time__day">27</div>
+            <div class="working-time__mounth">июл</div>
+        </div>
+        <div class="working-time__txt"><span class="working-time__txt__item">Ближайшая доставка</span><span
+                class="working-time__txt__item">Завтра, 12:00 – 22:00</span></div>
+    </div>
+    <nav class="main-nav"><a class="main-nav__item" href="#">О компании</a><a class="main-nav__item"
+                                                                              href="#">Доставка</a><a
+            class="main-nav__item" href="#">Рецепты</a><a class="main-nav__item" href="#">Оплата</a><a
+            class="main-nav__item" href="#">Возвраты</a><a class="main-nav__item" href="#">Блог</a><a
+            class="main-nav__item" href="#">Контакты</a></nav>
+    <div class="mobile-delivery">
+        <div class="b-delivery__status">
+            <svg class="icon icon-localion b-delivery__ico">
+                <use xlink:href="img/svg-sprite/sprite.svg#localion"></use>
+            </svg>
+            Самовывоз
+        </div>
+        <input class="text-input-2 mobile-delivery__input" type="text" placeholder="Выбрать город">
+    </div>
+    <a class="btn-blue mobile_menu__cat" href="#">Каталог</a>
+    <div class="network network__header mobile_menu__network"><a class="network__item fb" href="#">
+        <svg class="icon icon-fb fb__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+        </svg>
+    </a><a class="network__item inst" href="#">
+        <svg class="icon icon-inst inst__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+        </svg>
+    </a><a class="network__item whatsap" href="#">
+        <svg class="icon icon-whatsap whatsap__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+        </svg>
+    </a></div>
+</div>
+<header class="header">
+    <div class="min-container">
+        <div class="b-header">
+            <div class="b-header-top">
+                <div class="b-header-top__left"><a class="logo" href="#"><img src="img/logo.svg" alt=""></a>
+                    <div class="nav-icon close_menu">
+                        <div></div>
+                    </div>
+                    <nav class="nav-top">
+                        <div class="resize-drag nav-wrapper">
+                            <ul class="nav-ul">
+                                <li><a class="main-nav__item" href="#">О компании</a></li>
+                                <li><a class="main-nav__item" href="#">Доставка</a></li>
+                                <li><a class="main-nav__item" href="#">Рецепты</a></li>
+                                <li><a class="main-nav__item" href="#">Оплата</a></li>
+                                <li><a class="main-nav__item" href="#">Возвраты</a></li>
+                                <li><a class="main-nav__item" href="#">Блог</a></li>
+                                <li><a class="main-nav__item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="b-header-top__right">
+                    <div class="b-delivery b-header__delivery">
+                        <div class="b-delivery__change-city">
+                            <button class="b-delivery__btn" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Русский
+                                <svg class="icon icon-arrow-down b-delivery__btn__ico">
+                                    <use xlink:href="img/svg-sprite/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu b-delivery__dropdown"><a class="dropdown-menu__item" href="#">Москва</a><a
+                                    class="dropdown-menu__item" href="#">Санкт Петербург</a><a
+                                    class="dropdown-menu__item" href="#">Петропавловск-Камчатский</a><a
+                                    class="dropdown-menu__item" href="#">Сочи</a></div>
+                        </div>
+                        <div class="b-delivery__status">
+                            <svg class="icon icon-localion b-delivery__ico">
+                                <use xlink:href="img/svg-sprite/sprite.svg#localion"></use>
+                            </svg>
+                            Самовывоз
+                        </div>
+                    </div>
+                    <div class="working-time">
+                        <div class="working-time__txt"><span
+                                class="working-time__txt__item">Ближайшая доставка</span><span
+                                class="working-time__txt__item">Завтра, 12:00 – 22:00</span></div>
+                        <div class="working-time__calendar">
+                            <div class="working-time__day">27</div>
+                            <div class="working-time__mounth">июл</div>
+                        </div>
+                    </div>
+                    <div class="network network__header network-slider owl-carousel owl-theme"><a
+                            class="network__item fb" href="#">
+                        <svg class="icon icon-fb fb__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+                        </svg>
+                    </a><a class="network__item inst" href="#">
+                        <svg class="icon icon-inst inst__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+                        </svg>
+                    </a><a class="network__item whatsap" href="#">
+                        <svg class="icon icon-whatsap whatsap__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+                        </svg>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-header-middle-bg">
+        <div class="min-container">
+            <div class="b-header-middle">
+                <div class="b-header-callback"><a class="b-header-callback__tel" href="tel:+74951202498">+7 (495)
+                    120-24-98</a><a class="b-header-callback__callback" href="#" data-target="#modal-callback"
+                                    data-toggle="modal">Заказать звонок</a></div>
+                <div class="b-header-serch-c">
+                    <div class="b-header-serch-c__left"><a class="catalog-link b-header-serch-c__catalog-link" href="#">
+                        <svg class="icon icon-burger catalog-link__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#burger"></use>
+                        </svg>
+                        Каталог</a><a class="sale-link b-header-serch-c__sale-link" href="#">
+                        <svg class="icon icon-procent sale-link__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#procent"></use>
+                        </svg>
+                    </a>
+                        <form action="" method="">
+                            <div class="header-search">
+                                <input class="header-search__input" type="text" placeholder="Я ищу">
+                                <button class="header-search__btn" type="button">
+                                    <svg class="icon icon-loop header-search__btn__ico">
+                                        <use xlink:href="img/svg-sprite/sprite.svg#loop"></use>
+                                    </svg>
+                                </button>
+                                <button class="mobile-search" type="button">
+                                    <svg class="icon icon-loop mobile-search__ico">
+                                        <use xlink:href="img/svg-sprite/sprite.svg#loop"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="b-header-serch-c__right">
+                        <div class="auroriz"><a class="auroriz__pic" href="#">
+                            <svg class="icon icon-user auroriz__ico">
+                                <use xlink:href="img/svg-sprite/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                            <div class="auroriz__text"><a class="auroriz__link" href="#" data-target="#modal-login"
+                                                          data-toggle="modal">Вход на сайт</a><a class="auroriz__link"
+                                                                                                 href="#"
+                                                                                                 data-target="#modal-reg"
+                                                                                                 data-toggle="modal">Регистрация</a>
+                            </div>
+                        </div>
+                        <a class="header-fav" href="#">
+                            <svg class="icon icon-fav header-fav__ico">
+                                <use xlink:href="img/svg-sprite/sprite.svg#fav"></use>
+                            </svg>
+                            <span class="header-fav__count">33</span></a><a class="auroriz-mobile" href="#">
+                        <svg class="icon icon-user auroriz__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#user"></use>
+                        </svg>
+                    </a><a class="header-cart" href="#">
+                        <svg class="icon icon-cart header-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="header-cart__count">33</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="min-container">
+        <div class="b-header-bottom">
+            <div class="header-slider owl-carousel owl-theme"><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-1 header-slide-item__ico header-slide-item__ico--1">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-1"></use>
+                </svg>
+                Греческая кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-2 header-slide-item__ico header-slide-item__ico--2">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-2"></use>
+                </svg>
+                Все для суши</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-3 header-slide-item__ico header-slide-item__ico--3">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-3"></use>
+                </svg>
+                Мексиканская кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-4 header-slide-item__ico header-slide-item__ico--4">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-4"></use>
+                </svg>
+                Итальянская кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-5 header-slide-item__ico header-slide-item__ico--5">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-5"></use>
+                </svg>
+                Здоровое питание</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-6 header-slide-item__ico header-slide-item__ico--6">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-6"></use>
+                </svg>
+                Детские товары</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-7 header-slide-item__ico header-slide-item__ico--7">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-7"></use>
+                </svg>
+                Вегетерианская кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-1 header-slide-item__ico header-slide-item__ico--1">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-1"></use>
+                </svg>
+                Греческая кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-2 header-slide-item__ico header-slide-item__ico--2">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-2"></use>
+                </svg>
+                Все для суши</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-3 header-slide-item__ico header-slide-item__ico--3">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-3"></use>
+                </svg>
+                Мексиканская кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-4 header-slide-item__ico header-slide-item__ico--4">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-4"></use>
+                </svg>
+                Итальянская кухня</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-5 header-slide-item__ico header-slide-item__ico--5">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-5"></use>
+                </svg>
+                Здоровое питание</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-6 header-slide-item__ico header-slide-item__ico--6">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-6"></use>
+                </svg>
+                Детские товары</a><a class="header-slide-item" href="#">
+                <svg class="icon icon-i-7 header-slide-item__ico header-slide-item__ico--7">
+                    <use xlink:href="img/svg-sprite/sprite.svg#i-7"></use>
+                </svg>
+                Вегетерианская кухня</a></div>
+        </div>
+    </div>
+</header>
+<article class="content">
+    <div class="min-container">
+        <div class="page-layout">
+            <div class="breadcrumps"><a class="breadcrumps__item" href="#">Главная</a><span
+                    class="breadcrumps__item">Личный кабинет</span></div>
+            <h1 class="h1">Личный кабинет</h1>
+
+            <div class="cabinet">
+
+                <div class="cabinet-box">
+                    <div class="cabinet-box__content">
+                        <div class="cabinet-box__user-name">Алексаандр
+                            Константинопольский
+                        </div>
+
+                        <div class="cabinet-box__contacts">
+                            <a href="mailto:mail@gmail.com" class="mail-user">mail@gmail.com</a>
+                            <a href="tel:+79008000000" class="phone-user">+7 900 800 00 00</a>
+                        </div>
+
+                        <a href="#" class="links-edit">Выйти</a>
+                    </div>
+
+                    <div class="cabinet-box__photo"><img src="img/photo-user.png" alt=""></div>
+                </div>
+
+                <a href="#" class="cabinet-index-menu__links">
+                    <svg class="cabinet-index-menu__icon">
+                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon1"></use>
+                    </svg>
+                    <span class="cabinet-index-menu__text">Электронные
+чеки</span>
+                </a>
+
+                <a href="#" class="cabinet-index-menu__links">
+                    <svg class="cabinet-index-menu__icon fill-none">
+                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon2"></use>
+                    </svg>
+                    <span class="cabinet-index-menu__text">Избранное
+                            <span class="cabinet-index-menu__text-val">14 товаров</span>
+                        </span>
+                </a>
+
+                <a href="#" class="cabinet-index-menu__links">
+                    <svg class="cabinet-index-menu__icon">
+                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon3"></use>
+                    </svg>
+                    <span class="cabinet-index-menu__text">История заказов</span>
+                </a>
+
+                <a href="#" class="cabinet-index-menu__links">
+                    <svg class="cabinet-index-menu__icon">
+                        <use xlink:href="img/svg-sprite/main-sprite.svg#cabinet-menu-icon4"></use>
+                    </svg>
+                    <span class="cabinet-index-menu__text">Обратная связь</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<footer class="footer">
+    <div class="b-footer">
+        <div class="min-container">
+            <div class="b-footer-top">
+                <div class="b-footer-contact">
+                    <div class="b-footer-contact__item">
+                        <div class="b-footer-contact__ico"><img src="img/phone.svg" alt=""></div>
+                        <a class="b-footer-contact__title" href="tel:+74951202498">+7 (495)120-24-98</a>
+                        <div class="b-footer-contact__desc">Многоканальный номер</div>
+                    </div>
+                    <div class="b-footer-contact__item">
+                        <div class="b-footer-contact__ico"><img src="img/people.svg" alt=""></div>
+                        <div class="b-footer-contact__title">Покупателям</div>
+                        <div class="b-footer-contact__desc"><a class="b-footer-contact__desc__link"
+                                                               href="mailto:info@moreani.ru">info@moreani.ru</a><a
+                                class="b-footer-contact__desc__link" href="tel:+74951202498">+7 (495)120-24-98</a></div>
+                    </div>
+                    <div class="b-footer-contact__item">
+                        <div class="b-footer-contact__ico"><img src="img/located.svg" alt=""></div>
+                        <div class="b-footer-contact__title">Адрес главного офиса</div>
+                        <div class="b-footer-contact__desc">125438, г. Москва, ул. Войкова, д. 4, стр. 1</div>
+                    </div>
+                    <div class="b-footer-contact__item">
+                        <div class="b-footer-contact__ico"><img src="img/clock.svg" alt=""></div>
+                        <div class="b-footer-contact__title">Время работы</div>
+                        <div class="b-footer-contact__desc"><span>Пн–Пт: с 08:00 до 20:00</span><span>Сб–Вс: с 09:00 до 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-footer-middle">
+                <div class="b-footer-middle__col b-footer-middle__col--1">
+                    <div class="b-footer-middle__logo"><img src="img/logo.svg" alt=""></div>
+                    <nav class="ft-nav"><a class="ft-nav__item" href="#">О компании</a><a class="ft-nav__item" href="#">Доставка</a><a
+                            class="ft-nav__item" href="#">Оплата</a><a class="ft-nav__item" href="#">Возвраты</a><a
+                            class="ft-nav__item" href="#">Контакты</a></nav>
+                </div>
+                <div class="b-footer-middle__col b-footer-middle__col--2">
+                    <div class="b-footer-middle__title">Мы принимаем к оплате</div>
+                    <div class="list-bank"><span class="list-bank__item"><img src="img/visa.svg" alt=""></span><span
+                            class="list-bank__item"><img src="img/mastercard.svg" alt=""></span><span
+                            class="list-bank__item"><img src="img/mir.svg" alt=""></span></div>
+                </div>
+                <div class="b-footer-middle__col b-footer-middle__col--3">
+                    <div class="b-footer-middle__title">Мы в соцсетях</div>
+                    <div class="network"><a class="network__item fb" href="#">
+                        <svg class="icon icon-fb fb__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+                        </svg>
+                    </a><a class="network__item inst" href="#">
+                        <svg class="icon icon-inst inst__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+                        </svg>
+                    </a><a class="network__item whatsap" href="#">
+                        <svg class="icon icon-whatsap whatsap__ico network__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+                        </svg>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-footer-bottom">
+        <div class="min-container">
+            <div class="b-footer-bottom__politic"><a class="b-footer-bottom__politic__item" href="#">Пользовательское
+                соглашение</a><a class="b-footer-bottom__politic__item" href="#">Политика конфиденциальности</a></div>
+        </div>
+    </div>
+</footer>
+<div id="overlay"></div>
+<script src="js/scrips.min.js" async></script>
+</body>
+</html>

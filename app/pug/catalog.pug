@@ -1,0 +1,1174 @@
+extends include/head
+
+block title 
+    title Каталог
+block content
+
+    include ./include/header
+
+    article.content
+        .min-container
+            .page-layout
+                .breadcrumps
+                    a.breadcrumps__item(href='#') Главная
+                    a.breadcrumps__item(href='#') Каталог
+                    span.breadcrumps__item Икра
+                h1.h1.page-layout__h1 Икра
+                .catalog
+                    button.btn-blue.show-filter(type='button') Фильтры
+                    .catalog__filter
+                        form(method='' action='')
+                            .catalog__filter__inner#catalog-filter
+                                .catalog-filter
+                                    .catalog-filter__title Икра
+                                    .goods-change
+                                        a.goods-change__item.goods-change__item--active(href='#') Из красной рыбы
+                                        a.goods-change__item(href='#') Из белой рыбы
+                                .catalog-filter
+                                    .catalog-filter__title Цена
+                                    .slider-price
+                                        .polzunok-container-5
+                                            .ui_price_sl
+                                                .ui_price_sl__item
+                                                    label.ui_price_sl__label(for="filterFrom") От
+                                                    input.ui_price_sl__input#filterFrom(type="text" class="polzunok-input-5-left " value="2000")
+                                                span.divider -
+                                                .ui_price_sl__item
+                                                    label.ui_price_sl__label(for="filterTo") До
+                                                    input.ui_price_sl__input#filterTo(type="text" class="polzunok-input-5-right " value="3000")
+                                            .polzunok-5(data-min="0" data-max="5000")
+                                #accordion.accordeon
+                                    .accordeon__panel
+                                        .accordeon__heading
+                                            a.accordeon__link(data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true")
+                                                | Бренд
+                                                +icon('carret-down','accordeon__ico')
+                                        #collapse-1.accordeon__collapse.collapse.in
+                                            .accordeon__body
+                                                .accorion-search
+                                                    input.input.accorion-search__input(type='text' placeholder='Я ищу')
+                                                .accorion-check-list.scroll
+                                                    .check.accorion-check-list__check
+                                                        input#f1(type="checkbox" name="s2" value="1" checked)
+                                                        label(for="f1" ) Agama (10)
+                                                    .check.accorion-check-list__check
+                                                        input#f2(type="checkbox" name="s2" value="1" )
+                                                        label(for="f2" ) Agama (10)
+                                                    .check.accorion-check-list__check
+                                                        input#f3(type="checkbox" name="s2" value="1" )
+                                                        label(for="f3" ) Arti Seafood (1)
+                                                    .check.accorion-check-list__check
+                                                        input#f4(type="checkbox" name="s2" value="1" )
+                                                        label(for="f4" ) Arti Seafood (1)
+                                                    .check.accorion-check-list__check
+                                                        input#f5(type="checkbox" name="s2" value="1" )
+                                                        label(for="f5" ) Borealis (11)
+                                                    .check.accorion-check-list__check
+                                                        input#f6(type="checkbox" name="s2" value="1" )
+                                                        label(for="f6" ) Borealis (11)
+                                                    .check.accorion-check-list__check
+                                                        input#f7(type="checkbox" name="s2" value="1" )
+                                                        label(for="f7" ) Flipper (6)
+                                                    .check.accorion-check-list__check
+                                                        input#f8(type="checkbox" name="s2" value="1" )
+                                                        label(for="f8" ) Flipper (6)
+                                                    .check.accorion-check-list__check
+                                                        input#f9(type="checkbox" name="s2" value="1" )
+                                                        label(for="f9" ) Murex (2)
+                                                    .check.accorion-check-list__check
+                                                        input#f10(type="checkbox" name="s2" value="1" )
+                                                        label(for="f10" ) Murex (2)
+                                                    .check.accorion-check-list__check
+                                                        input#f41(type="checkbox" name="s2" value="1" checked)
+                                                        label(for="f41" ) Agama (10)
+                                                    .check.accorion-check-list__check
+                                                        input#f42(type="checkbox" name="s2" value="1" )
+                                                        label(for="f42" ) Agama (10)
+                                                    .check.accorion-check-list__check
+                                                        input#f43(type="checkbox" name="s2" value="1" )
+                                                        label(for="f43" ) Arti Seafood (1)
+                                                    .check.accorion-check-list__check
+                                                        input#f44(type="checkbox" name="s2" value="1" )
+                                                        label(for="f44" ) Arti Seafood (1)
+                                                    .check.accorion-check-list__check
+                                                        input#f45(type="checkbox" name="s2" value="1" )
+                                                        label(for="f45" ) Borealis (11)
+                                                    .check.accorion-check-list__check
+                                                        input#f46(type="checkbox" name="s2" value="1" )
+                                                        label(for="f46" ) Borealis (11)
+                                                    .check.accorion-check-list__check
+                                                        input#f47(type="checkbox" name="s2" value="1" )
+                                                        label(for="f47" ) Flipper (6)
+                                                    .check.accorion-check-list__check
+                                                        input#f48(type="checkbox" name="s2" value="1" )
+                                                        label(for="f48" ) Flipper (6)
+                                                    .check.accorion-check-list__check
+                                                        input#f49(type="checkbox" name="s2" value="1" )
+                                                        label(for="f49" ) Murex (2)
+                                                    .check.accorion-check-list__check
+                                                        input#f50(type="checkbox" name="s2" value="1" )
+                                                        label(for="f50" ) Murex (2)
+
+                                    .accordeon__panel
+                                        .accordeon__heading
+                                            a.accordeon__link(data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="true")
+                                                | Страна производителя
+                                                +icon('carret-down','accordeon__ico')
+                                        #collapse-2.accordeon__collapse.collapse.in
+                                            .accordeon__body
+                                                .accorion-search
+                                                    input.input.accorion-search__input(type='text' placeholder='Я ищу')
+                                                .accorion-check-list.scroll
+                                                    .check.accorion-check-list__check
+                                                        input#f11(type="checkbox" name="s2" value="1" checked)
+                                                        label(for="f11" ) Армения
+                                                    .check.accorion-check-list__check
+                                                        input#f12(type="checkbox" name="s2" value="1" )
+                                                        label(for="f12" ) Беларусь
+                                                    .check.accorion-check-list__check
+                                                        input#f13(type="checkbox" name="s2" value="1" )
+                                                        label(for="f13" ) Китай
+                                                    .check.accorion-check-list__check
+                                                        input#f14(type="checkbox" name="s2" value="1" )
+                                                        label(for="f14" ) Перу
+                                                    .check.accorion-check-list__check
+                                                        input#f15(type="checkbox" name="s2" value="1" )
+                                                        label(for="f15" ) Россия
+                                                    .check.accorion-check-list__check
+                                                        input#f16(type="checkbox" name="s2" value="1" )
+                                                        label(for="f16" ) Турция
+                                                    .check.accorion-check-list__check
+                                                        input#f17(type="checkbox" name="s2" value="1" )
+                                                        label(for="f17" ) Фарерские о-ва
+                                                    .check.accorion-check-list__check
+                                                        input#f18(type="checkbox" name="s2" value="1" )
+                                                        label(for="f18" ) Чехия
+                                                    .check.accorion-check-list__check
+                                                        input#f19(type="checkbox" name="s2" value="1" )
+                                                        label(for="f19" ) Чили
+                                                    .check.accorion-check-list__check
+                                                        input#f20(type="checkbox" name="s2" value="1" )
+                                                        label(for="f20" ) Украина
+
+
+                                    .accordeon__panel
+                                        .accordeon__heading
+                                            a.accordeon__link(data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false")
+                                                | Доп. фильтры
+                                                +icon('carret-down','accordeon__ico')
+                                        #collapse-3.accordeon__collapse.collapse
+                                            .accordeon__body
+                                                .accorion-search
+                                                    input.input.accorion-search__input(type='text' placeholder='Я ищу')
+                                                .accorion-check-list.scroll
+                                                    .check.accorion-check-list__check
+                                                        input#f21(type="checkbox" name="s2" value="1" checked)
+                                                        label(for="f21" ) Армения
+                                                    .check.accorion-check-list__check
+                                                        input#f22(type="checkbox" name="s2" value="1" )
+                                                        label(for="f22" ) Беларусь
+                                                    .check.accorion-check-list__check
+                                                        input#f23(type="checkbox" name="s2" value="1" )
+                                                        label(for="f23" ) Китай
+                                                    .check.accorion-check-list__check
+                                                        input#f24(type="checkbox" name="s2" value="1" )
+                                                        label(for="f24" ) Перу
+
+                    .catalog__content
+                        .catalog-sort
+                            span.catalog-sort__title Сортировать по:
+                            a.catalog-sort__item.catalog-sort__item--active(href='#') По умолчанию
+                            a.catalog-sort__item(href='#') Популярности
+                            a.catalog-sort__item(href='#') Цене
+                            a.catalog-sort__item(href='#') Скидке
+                        .b-goods.catalog__b-goods
+                            .b-goods-list.catalog__b-goods-list
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/1.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/2.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            .number
+                                                span.minus -
+                                                input.number__input(type="text" size='1' value="1")
+                                                .plus +
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/4.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/3.png' alt='')
+                                            .sale-list
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/1.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/2.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            .number
+                                                span.minus -
+                                                input.number__input(type="text" size='1' value="1")
+                                                .plus +
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/4.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/3.png' alt='')
+                                            .sale-list
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/1.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/2.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            .number
+                                                span.minus -
+                                                input.number__input(type="text" size='1' value="1")
+                                                .plus +
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/4.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/3.png' alt='')
+                                            .sale-list
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/1.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/2.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            .number
+                                                span.minus -
+                                                input.number__input(type="text" size='1' value="1")
+                                                .plus +
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/4.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/3.png' alt='')
+                                            .sale-list
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/1.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/2.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            .number
+                                                span.minus -
+                                                input.number__input(type="text" size='1' value="1")
+                                                .plus +
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/4.png' alt='')
+                                            .sale-list
+                                                .sale-list__new Новинка
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+                                .b-goods-list__item
+                                    .b-goods-list-item
+                                        a.b-goods-list-item__pic(href='#')
+                                            img(src='img/goods/3.png' alt='')
+                                            .sale-list
+                                                .sale-list__sale -15%
+                                                .sale-list__hit Хит
+                                        a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                        .b-goods-list-item__price
+                                            span.b-goods-list-item__new-price 160,69 ₽
+                                            span.b-goods-list-item__old-price 76,30 ₽
+                                        .b-rating.b-goods-list-item__rating
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-1.svg' alt='')
+                                            a.b-rating__star(href='#')
+                                                img(src='img/star-2.svg' alt='')
+                                        .b-goods-list-item__btn-row
+                                            a.add-cart(href='#')
+                                                +icon('cart','add-cart__ico')
+                                            a.fav-btn(href='javascript: void(0);')
+                                                +icon('fav-2','fav-btn__ico')
+                                            a.compare-btn(href='#')
+                                                +icon('card-ico-2','compare-btn__ico')
+
+                        .pagination
+                            a.pagination__prev(href='#')
+                                +icon('arrow-pagi','pagination__arrow pagination__prev__ico')
+                                | Предыдущая страница
+                            .pagination__pages
+                                a.pagination__link.pagination__link--active(href='#') 1
+                                a.pagination__link(href='#') 2
+                                a.pagination__link(href='#') 3
+                                a.pagination__link(href='#') 4
+                                a.pagination__link(href='#') 5
+                                a.pagination__link(href='#') 6
+                                a.pagination__link(href='#') 7
+                                span.pagination__span ...
+                            a.pagination__next(href='#') Следующая страница
+                                +icon('arrow-pagi','pagination__arrow pagination__next__ico')
+
+
+                .catalog-view
+                    .b-goods.catalog-view__b-goods
+                        h2.h2.b-goods__h2 Ранее <span class="blue-txt">просмотренные</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+
+                    .b-goods.catalog-view__b-goods
+                        h2.h2.b-goods__h2 Товары <span class="blue-txt">по акции</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+
+                    .b-goods.catalog-view__b-goods
+                        h2.h2.b-goods__h2 Популярные <span class="blue-txt">товары</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+
+    include ./include/footer
+    #overlay
+    include ./include/scripts
+    include ./include/modal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

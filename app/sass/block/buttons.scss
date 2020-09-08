@@ -1,0 +1,232 @@
+.more-slider-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    span{
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 1px solid #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 11px;
+        transition: all 0.15s;
+    }
+    &__ico{
+        width: 11px;
+        fill: #58595B;
+    }
+
+    &:hover,
+    &:focus{
+        background: transparent;
+        color: #9BB8E9;
+
+        span{
+            border: 1px solid #9BB8E9;
+            background: #9BB8E9;
+        }
+
+    }
+}
+
+.btn-blue{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+    background: #003DA6;
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus{
+        background: #0050DB;
+        color: #FFFFFF;
+    }
+    &.disabled{
+        background: #DBD8DF;
+        color: #0050DB;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+
+
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+    transform: rotate(45deg);
+    font-size: 34px;
+    color: #343434;
+    transition: all 0.15s;
+    opacity: 0.9;
+    &:hover{
+
+    }
+}
+
+.btn-grey-border{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #D2D6DD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: transparent;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: rgba(88, 89, 91, 0.7);
+    padding-bottom: 2px;
+
+    &:hover,
+    &:focus{
+        background: transparent;
+        color: #0050DB;
+        border: 1px solid #0050DB;
+    }
+    &.disabled{
+        background: #DBD8DF;
+        color: #0050DB;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.btn-add-fav{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #EAEEF3;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #9BB8E9;
+    &__ico{
+        width: 29px;
+        height: 26px;
+        margin-left: 12px;
+        fill: #D2DEF2;
+        transition: all 0.15s;
+    }
+    &:hover,
+    &:focus{
+        border: 1px solid #0050DB;
+        .btn-add-fav__ico{
+            fill: #0050DB;
+        }
+    }
+}
+
+.btn-grey{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    width: auto;
+    height: 50px;
+    padding: 0 20px 2px;
+    background: #D2D6DD;
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus{
+        background: #9BB8E9;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+/*************** Анимация  ********************/
+
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #fff;
+    }
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #fff;
+    }
+}
+
+/*************** Анимация  ********************/
+
+@media screen and (max-width: 1250px){
+    .btn-blue,
+    .more-btn,
+    .btn-border-blue,
+    .btn-grey-border,
+    .btn-border-white{
+        font-size: 14px;
+    }
+    .btn-blue,
+    .btn-border-blue,
+    .btn-grey-border,
+    .btn-border-white{
+        height: 50px;
+        width: auto;
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 993px){
+
+}
+@media screen and (max-width: 768px){
+
+
+}

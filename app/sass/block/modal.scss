@@ -1,0 +1,76 @@
+.modal {
+    z-index: 1034;
+}
+.modal-backdrop {
+    z-index: 1033;
+}
+
+.close-modal{
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 20px;
+    background: transparent;
+    &__ico{
+        width: 25px;
+        height: 25px;
+        fill: #ccc;
+        transition: all 0.15s;
+        &:hover{
+            fill: #1f97d7;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1250px){
+
+
+}
+@media screen and (max-width: 993px){
+    .modal-c{
+        max-width: calc(100% - 30px);
+        .consult-form{
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+
+}
+
+@media screen and (max-width: 550px){
+
+}
+
+@media screen and (max-width: 500px){
+
+
+}
+
+@media screen and (max-width: 440px){
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+
+}
+
+@media screen and (max-width: 400px){
+
+
+
+}
+
+@media screen and (max-width: 320px){
+
+
+}

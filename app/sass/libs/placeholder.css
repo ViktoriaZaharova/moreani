@@ -1,0 +1,14 @@
+
+::placeholder {color: rgba(88, 89, 91, 0.7); opacity: 1;}
+::-webkit-input-placeholder {color:rgba(88, 89, 91, 0.7); opacity: 1;}
+::-moz-placeholder {color:rgba(88, 89, 91, 0.7); opacity: 1;}
+:-moz-placeholder {color:rgba(88, 89, 91, 0.7); opacity: 1;}
+:-ms-input-placeholder {color:rgba(88, 89, 91, 0.7); opacity: 1;}
+
+
+
+:focus::-webkit-input-placeholder	{color:transparent;}
+:focus::-moz-placeholder			{color:transparent;}
+:focus:-ms-input-placeholder		{color:transparent;}
+:focus::placeholder					{color:transparent;}
+

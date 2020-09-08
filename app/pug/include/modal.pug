@@ -1,0 +1,71 @@
+//.modal.scroll.fade#modal-1(tabindex="-1")
+    .modal-calc
+        button.close-modal(type="button" data-dismiss="modal")
+            +icon('close_big','close-modal__ico')
+        .modal-calc__title Калькулятор <span class="blue-text font-black">тарифов</span>
+        form(action='' method='')
+            .calc-content
+                .calc-content__left
+                    .form-send(style='display: none;')
+                        .form-send__row
+                            label.form-send__label(for='') Ваше имя
+                            input.text-input(type='text' placeholder='Имя' required)
+                        .form-send__row
+                            label.form-send__label(for='') Телефон
+                            input.text-input.phone_input(type='tel' placeholder='Телефон' required)
+                        .form-send__row
+                            label.form-send__label(for='') E-mail
+                            input.text-input(type='email' placeholder='E-mail' required)
+                        .check.form-send__check
+                            input#r21(type="checkbox" name="s2" value="1" checked required)
+                            label(for="r21" ) Согласие на обработку персональных данных
+                        .form-send__row
+                            button.btn-blue.form-send__btn(type='button') Отправить заявку
+                    .form-send
+                        .form-send__row
+                            label.form-send__label(for='') Количество пользователей:
+                            .number
+                                span.minus
+                                    b
+                                input.text-input(type="text" value="1" size="5")
+                                .plus
+                                    b
+                        .form-send__row
+                            label.form-send__label(for='') Размер ящиков, GB:
+                            #slider
+                                span.min_val 5
+                                span.max_val 15
+                                #custom-handle.ui-slider-handle
+                        .form-send__row
+                            label.form-send__label(for='') Количество лицензий Skype:
+                            .number
+                                span.minus
+                                    b
+                                input.text-input(type="text" value="1" size="5")
+                                .plus
+                                    b
+                        .form-send__row
+                            label.form-send__label(for='') Файловое хранилище
+                            .check.form-send__check--custom
+                                input#r23(type="checkbox" name="s2" value="1" required)
+                                label(for="r23" )
+                        .form-send__row
+                            button.btn-blue.form-send__btn(type='submit') Отправить заявку
+
+                .calc-content__right
+                    .calc-sum
+                        .calc-sum-item
+                            .calc-sum-item__price 2 100 руб. / мес.
+                            p 3x * <span class='medium'>700 руб.</span>
+                            p Тариф «Корпоративный»
+                        .calc-sum-item
+                            .calc-sum-item__price 800 руб. / мес.
+                            p 2x * <span class='medium'>400 руб.</span>
+                            p Тариф «Почтовый»
+                        .calc-sum-item
+                            .calc-sum-item__price 1 750 руб. / мес.
+                            p 5x * <span class='medium'>Объем 50 Гб</span>
+                            p Тариф «Хранилище»
+                        .calc-sum-total
+                            .calc-sum-total__title 4 650 руб/мес.
+                            .calc-sum-total__desc Общая стоимость

@@ -1,0 +1,185 @@
+// Мобильный поиск
+.mobile-search-form
+    .mobile-search-form__logo: img(src='img/logo.svg' alt='')
+    button.close-modal-search(type="button" data-dismiss="modal")
+        +icon('close_big','close-modal-search__ico')
+    form.mobile-search-form-c(action='' method='')
+        input.m-search-input.mobile-search-form__input(type='text' placeholder='Я ищу')
+        button.btn-blue.mobile-search-form__btn(type='button') Найти
+
+// Моббильное меню
+.mobile_menu.close_menu.scroll
+    .working-time
+        .working-time__calendar
+            .working-time__day 27
+            .working-time__mounth июл
+        .working-time__txt
+            span.working-time__txt__item Ближайшая доставка
+            span.working-time__txt__item Завтра, 12:00 – 22:00
+    nav.main-nav
+        a.main-nav__item(href='#') О компании
+        a.main-nav__item(href='#') Доставка
+        a.main-nav__item(href='#') Рецепты
+        a.main-nav__item(href='#') Оплата
+        a.main-nav__item(href='#') Возвраты
+        a.main-nav__item(href='#') Блог
+        a.main-nav__item(href='#') Контакты
+    .mobile-delivery
+        .b-delivery__status
+            +icon('localion','b-delivery__ico')
+            | Самовывоз
+        input.text-input-2.mobile-delivery__input(type='text' placeholder='Выбрать город')
+    a.btn-blue.mobile_menu__cat(href='#') Каталог
+    .network.network__header.mobile_menu__network
+        a.network__item.fb(href='#')
+            +icon('fb','fb__ico network__ico')
+        a.network__item.inst(href='#')
+            +icon('inst','inst__ico network__ico')
+        a.network__item.whatsap(href='#')
+            +icon('whatsap','whatsap__ico network__ico')
+
+
+
+header.header
+    .min-container
+        .b-header
+
+            .b-header-top
+                .b-header-top__left
+                    a.logo(href='#'): img(src='img/logo.svg' alt='')
+                    .nav-icon.close_menu
+                        div
+                    nav.nav-top
+                        .resize-drag.nav-wrapper
+                            ul.nav-ul
+                                li
+                                    a.main-nav__item(href='#') О компании
+                                li
+                                    a.main-nav__item(href='#') Доставка
+                                li
+                                    a.main-nav__item(href='#') Рецепты
+                                li
+                                    a.main-nav__item(href='#') Оплата
+                                li
+                                    a.main-nav__item(href='#') Возвраты
+                                li
+                                    a.main-nav__item(href='#') Блог
+                                li
+                                    a.main-nav__item(href='#') Контакты
+
+                .b-header-top__right
+                    .b-delivery.b-header__delivery
+                        .b-delivery__change-city
+                            button.b-delivery__btn(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Русский
+                                +icon('arrow-down','b-delivery__btn__ico')
+                            .dropdown-menu.b-delivery__dropdown
+                                a.dropdown-menu__item(href="#") Москва
+                                a.dropdown-menu__item(href="#") Санкт Петербург
+                                a.dropdown-menu__item(href="#") Петропавловск-Камчатский
+                                a.dropdown-menu__item(href="#") Сочи
+                        .b-delivery__status
+                            +icon('localion','b-delivery__ico')
+                            | Самовывоз
+                    .working-time
+                        .working-time__txt
+                            span.working-time__txt__item Ближайшая доставка
+                            span.working-time__txt__item Завтра, 12:00 – 22:00
+                        .working-time__calendar
+                            .working-time__day 27
+                            .working-time__mounth июл
+                    .network.network__header.network-slider.owl-carousel.owl-theme
+                        a.network__item.fb(href='#')
+                            +icon('fb','fb__ico network__ico')
+                        a.network__item.inst(href='#')
+                            +icon('inst','inst__ico network__ico')
+                        a.network__item.whatsap(href='#')
+                            +icon('whatsap','whatsap__ico network__ico')
+
+    .b-header-middle-bg
+        .min-container
+            .b-header-middle
+                .b-header-callback
+                    a.b-header-callback__tel(href='tel:+74951202498') +7 (495) 120-24-98
+                    a.b-header-callback__callback(href='#' data-target="#modal-callback" data-toggle="modal") Заказать звонок
+                .b-header-serch-c
+                    .b-header-serch-c__left
+                        a.catalog-link.b-header-serch-c__catalog-link(href='#')
+                            +icon('burger','catalog-link__ico')
+                            | Каталог
+                        a.sale-link.b-header-serch-c__sale-link(href='#')
+                            +icon('procent','sale-link__ico')
+                        form(action='' method='')
+                            .header-search
+                                input.header-search__input(type='text' placeholder='Я ищу')
+                                button.header-search__btn(type='button')
+                                    +icon('loop','header-search__btn__ico')
+                                button.mobile-search(type='button')
+                                    +icon('loop','mobile-search__ico')
+                    .b-header-serch-c__right
+                        .auroriz
+                            a.auroriz__pic(href='#')
+                                +icon('user','auroriz__ico')
+                            .auroriz__text
+                                a.auroriz__link(href='#' data-target="#modal-login" data-toggle="modal") Вход на сайт
+                                a.auroriz__link(href='#' data-target="#modal-reg" data-toggle="modal") Регистрация
+                        a.header-fav(href='#')
+                            +icon('fav','header-fav__ico')
+                            span.header-fav__count 33
+                        a.auroriz-mobile(href='#')
+                            +icon('user','auroriz__ico')
+                        a.header-cart(href='#')
+                            +icon('cart','header-cart__ico')
+                            span.header-cart__count 33
+
+    .min-container
+        .b-header-bottom
+            .header-slider.owl-carousel.owl-theme
+                a.header-slide-item(href='#')
+                    +icon('i-1','header-slide-item__ico header-slide-item__ico--1')
+                    | Греческая кухня
+                a.header-slide-item(href='#')
+                    +icon('i-2','header-slide-item__ico header-slide-item__ico--2')
+                    | Все для суши
+                a.header-slide-item(href='#')
+                    +icon('i-3','header-slide-item__ico header-slide-item__ico--3')
+                    | Мексиканская кухня
+                a.header-slide-item(href='#')
+                    +icon('i-4','header-slide-item__ico header-slide-item__ico--4')
+                    | Итальянская кухня
+                a.header-slide-item(href='#')
+                    +icon('i-5','header-slide-item__ico header-slide-item__ico--5')
+                    | Здоровое питание
+                a.header-slide-item(href='#')
+                    +icon('i-6','header-slide-item__ico header-slide-item__ico--6')
+                    | Детские товары
+                a.header-slide-item(href='#')
+                    +icon('i-7','header-slide-item__ico header-slide-item__ico--7')
+                    | Вегетерианская кухня
+                a.header-slide-item(href='#')
+                    +icon('i-1','header-slide-item__ico header-slide-item__ico--1')
+                    | Греческая кухня
+                a.header-slide-item(href='#')
+                    +icon('i-2','header-slide-item__ico header-slide-item__ico--2')
+                    | Все для суши
+                a.header-slide-item(href='#')
+                    +icon('i-3','header-slide-item__ico header-slide-item__ico--3')
+                    | Мексиканская кухня
+                a.header-slide-item(href='#')
+                    +icon('i-4','header-slide-item__ico header-slide-item__ico--4')
+                    | Итальянская кухня
+                a.header-slide-item(href='#')
+                    +icon('i-5','header-slide-item__ico header-slide-item__ico--5')
+                    | Здоровое питание
+                a.header-slide-item(href='#')
+                    +icon('i-6','header-slide-item__ico header-slide-item__ico--6')
+                    | Детские товары
+                a.header-slide-item(href='#')
+                    +icon('i-7','header-slide-item__ico header-slide-item__ico--7')
+                    | Вегетерианская кухня
+
+
+
+
+
+
+

@@ -1,0 +1,693 @@
+extends include/head
+
+block title
+    title Главная
+block content
+
+    include ./include/header
+
+    article.content
+        .main-content
+            .min-container
+                h1.h1 Быстро доставим любой Ваш заказ по <span class="blue-txt">всей России</span>
+            .container
+                .main-slider.one_slide.owl-carousel.owl-theme
+                    .main-slide-item(style='background-image: url(img/slide-1.jpg);')
+                        .main-slide-item__text-block
+                            .main-slide-item__title Свежий вылов
+                            .main-slide-item__txt Горбуша дикая Сахалинская ~ 1 кг
+                            .main-slide-item__price
+                                span.main-slide-item__new-price 349 ₽/кг
+                                span.main-slide-item__old-price 459 ₽/кг
+                            a.more-slider-btn(href='#')
+                                | Подробнее
+                                span
+                                    +icon('arrow-right-2','more-slider-btn__ico')
+                        .slider-sale.main-slide-item__sale Акция
+                    .main-slide-item(style='background-image: url(img/slide-1.jpg);')
+                        .main-slide-item__text-block
+                            .main-slide-item__title Свежий вылов
+                            .main-slide-item__txt Горбуша дикая Сахалинская ~ 1 кг
+                            .main-slide-item__price
+                                span.main-slide-item__new-price 349 ₽/кг
+                                span.main-slide-item__old-price 459 ₽/кг
+                            a.more-slider-btn(href='#')
+                                | Подробнее
+                                span
+                                    +icon('arrow-right-2','more-slider-btn__ico')
+                        .slider-sale.main-slide-item__sale Акция
+                    .main-slide-item(style='background-image: url(img/slide-1.jpg);')
+                        .main-slide-item__text-block
+                            .main-slide-item__title Свежий вылов
+                            .main-slide-item__txt Горбуша дикая Сахалинская ~ 1 кг
+                            .main-slide-item__price
+                                span.main-slide-item__new-price 349 ₽/кг
+                                span.main-slide-item__old-price 459 ₽/кг
+                            a.more-slider-btn(href='#')
+                                | Подробнее
+                                span
+                                    +icon('arrow-right-2','more-slider-btn__ico')
+                        .slider-sale.main-slide-item__sale Акция
+                    .main-slide-item(style='background-image: url(img/slide-1.jpg);')
+                        .main-slide-item__text-block
+                            .main-slide-item__title Свежий вылов
+                            .main-slide-item__txt Горбуша дикая Сахалинская ~ 1 кг
+                            .main-slide-item__price
+                                span.main-slide-item__new-price 349 ₽/кг
+                                span.main-slide-item__old-price 459 ₽/кг
+                            a.more-slider-btn(href='#')
+                                | Подробнее
+                                span
+                                    +icon('arrow-right-2','more-slider-btn__ico')
+                        .slider-sale.main-slide-item__sale Акция
+                    .main-slide-item(style='background-image: url(img/slide-1.jpg);')
+                        .main-slide-item__text-block
+                            .main-slide-item__title Свежий вылов
+                            .main-slide-item__txt Горбуша дикая Сахалинская ~ 1 кг
+                            .main-slide-item__price
+                                span.main-slide-item__new-price 349 ₽/кг
+                                span.main-slide-item__old-price 459 ₽/кг
+                            a.more-slider-btn(href='#')
+                                | Подробнее
+                                span
+                                    +icon('arrow-right-2','more-slider-btn__ico')
+                        .slider-sale.main-slide-item__sale Акция
+
+                .min-container
+                    .b-product-type.carusel-4.owl-carousel.owl-theme
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Икра
+                                +icon('f-1','b-product-type-item__ico__cat b-product-type-item__ico__f-1')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кеты
+                                    a.b-product-type-item__list__item(href='#') Нерки
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Рыба
+                                +icon('f-2','b-product-type-item__ico__cat b-product-type-item__ico__f-2')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кета
+                                    a.b-product-type-item__list__item(href='#') Нерка
+                                    a.b-product-type-item__list__item(href='#') Горбуша
+                                    a.b-product-type-item__list__item(href='#') Семга
+                                    a.b-product-type-item__list__item(href='#') Оса
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Филе рыбное
+                                +icon('f-3','b-product-type-item__ico__cat b-product-type-item__ico__f-3')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кеты
+                                    a.b-product-type-item__list__item(href='#') Морской язык
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Море- продукты
+                                +icon('f-4','b-product-type-item__ico__cat b-product-type-item__ico__f-4')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Креветки
+                                    a.b-product-type-item__list__item(href='#') Мидии
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Икра
+                                +icon('f-1','b-product-type-item__ico__cat b-product-type-item__ico__f-1')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кеты
+                                    a.b-product-type-item__list__item(href='#') Нерки
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Рыба
+                                +icon('f-2','b-product-type-item__ico__cat b-product-type-item__ico__f-2')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кета
+                                    a.b-product-type-item__list__item(href='#') Нерка
+                                    a.b-product-type-item__list__item(href='#') Горбуша
+                                    a.b-product-type-item__list__item(href='#') Семга
+                                    a.b-product-type-item__list__item(href='#') Оса
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Филе рыбное
+                                +icon('f-3','b-product-type-item__ico__cat b-product-type-item__ico__f-3')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Кеты
+                                    a.b-product-type-item__list__item(href='#') Морской язык
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+                        .b-product-type-item
+                            .b-product-type-item__header
+                                a.b-product-type-item__title(href='#') Море- продукты
+                                +icon('f-4','b-product-type-item__ico__cat b-product-type-item__ico__f-4')
+                            .b-product-type-item__content
+                                .b-product-type-item__dots
+                                    +icon('dots','b-product-type-item__ico')
+                                .b-product-type-item__list
+                                    a.b-product-type-item__list__item(href='#') Креветки
+                                    a.b-product-type-item__list__item(href='#') Мидии
+                                    a.b-product-type-item__list__item(href='#') Горбуши
+                                    a.b-product-type-item__list__item(href='#') Семги
+                                    a.b-product-type-item__list__item(href='#') Осе
+
+
+                    .b-goods
+                        h2.h2.b-goods__h2 <span class="blue-txt">Новинки</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Барабуля живая, тушка Камчатка
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Креветка 80/100 в/м негл.северная 1/5кг Гренландия
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Барабуля живая, тушка Камчатка
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Барабуля живая, тушка Камчатка
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                    .b-goods
+                        h2.h2.b-goods__h2 <span class="blue-txt">Товар дня</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                        .sale-list
+                                            .sale-list__new Новинка
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                        .sale-list
+                                            .sale-list__sale -15%
+                                            .sale-list__hit Хит
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+
+                    .b-goods
+                        h2.h2.b-goods__h2 <span class="blue-txt">Рекомендуем</span>
+                        .b-goods-list
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/1.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/2.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+                            .b-goods-list__item
+                                .b-goods-list-item
+                                    a.b-goods-list-item__pic(href='#')
+                                        img(src='img/goods/3.png' alt='')
+                                    a.b-goods-list-item__title(href='#') Карп свежемороженый, тушка ПБГ*
+                                    .b-goods-list-item__price
+                                        span.b-goods-list-item__new-price 160,69 ₽
+                                        span.b-goods-list-item__old-price 76,30 ₽
+                                    .b-rating.b-goods-list-item__rating
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-1.svg' alt='')
+                                        a.b-rating__star(href='#')
+                                            img(src='img/star-2.svg' alt='')
+                                    .b-goods-list-item__btn-row
+                                        a.add-cart(href='#')
+                                            +icon('cart','add-cart__ico')
+                                        a.fav-btn(href='javascript: void(0);')
+                                            +icon('fav-2','fav-btn__ico')
+                                        //a.compare-btn(href='#')
+                                            +icon('card-ico-2','compare-btn__ico')
+
+            .b-pref
+                .min-container
+                    h2.h2.b-pref__h2 <span class="blue-txt">Наши преимущества</span>
+                    .b-pref-list
+                        .b-pref-list-item.b-pref-list__item
+                            .b-pref-list-item__pic: img(src='img/pref/1.svg' alt='')
+                            .b-pref-list-item__title Мы искушенные кулинары
+                            .b-pref-list-item__txt И предлагаем ассортимент как для любителей, так и настоящих гурманов
+                        .b-pref-list-item.b-pref-list__item
+                            .b-pref-list-item__pic: img(src='img/pref/2.svg' alt='')
+                            .b-pref-list-item__title Обратите внимание
+                            .b-pref-list-item__txt Вы держите в руках вкус настоящей пищи, который мы сохранили для Вас
+                        .b-pref-list-item.b-pref-list__item
+                            .b-pref-list-item__pic: img(src='img/pref/3.svg' alt='')
+                            .b-pref-list-item__title Наши цены «в рынке»
+                            .b-pref-list-item__txt И чутко реагируют на ветер перемен в океане современных трендов
+                        .b-pref-list-item.b-pref-list__item
+                            .b-pref-list-item__pic: img(src='img/pref/4.svg' alt='')
+                            .b-pref-list-item__title Ловим по-крупному
+                            .b-pref-list-item__txt Мы открыты для рестораторов, оптовиков и розничных покупателей
+                        .b-pref-list-item.b-pref-list__item
+                            .b-pref-list-item__pic: img(src='img/pref/5.svg' alt='')
+                            .b-pref-list-item__title По всей России
+                            .b-pref-list-item__txt Доставляем любой заказ быстро и бережно. Главное — заказать в MOREANI
+
+            .container
+                .min-container
+                    .main-contact
+                        .main-contact-form
+                            h2.h2.main-contact__h2 Не пропустите наши <span class="blue-txt">Специальные предложения!</span>
+                            .main-contact__desc Подпишитесь на еженедельную e-mail рассылку!
+                            .contact-tab
+                                ul.contact-tab__tab-nav
+                                    li.active
+                                        a.contact-tab__tab-nav__item(href='#id-c-1' data-toggle="tab") Телефон
+                                    li
+                                        a.contact-tab__tab-nav__item(href='#id-c-2' data-toggle="tab") E-mail
+                                .tab-content.contact-tab__content
+                                    #id-c-1.tab-pane.fade.show.active.in
+                                        form(method='' action='')
+                                            .contact-tab__row
+                                                input.text-input.phone_input(type='tel' placeholder='+7 ___ ___ __ __' required)
+                                            .contact-tab__row
+                                                button.btn-blue.contact-tab__btn(type='submit') Подписаться
+                                            .contact-tab__row
+                                                .check.contact-tab__check
+                                                    input#r1(type="checkbox" name="s2" value="1" checked required)
+                                                    label(for="r1" ) Я принимаю условия <a href="">Пользовательского соглашения</a>
+                                    #id-c-2.tab-pane.fade
+                                        form(method='' action='')
+                                            .contact-tab__row
+                                                input.text-input.phone_input(type='email' placeholder='E-mail' required)
+                                            .contact-tab__row
+                                                button.btn-blue.contact-tab__btn(type='submit') Подписаться
+                                            .contact-tab__row
+                                                .check.form-send__check
+                                                    input#r2(type="checkbox" name="s2" value="1" checked required)
+                                                    label(for="r2" ) Я принимаю условия <a href="">Пользовательского соглашения</a>
+
+                        .main-contact__pic
+                            img(src='img/girl.png' alt='')
+
+
+                .min-container
+                    .product-location
+                        h2.h2.product-location__h2 <span class="blue-txt">Где отведать</span> нашу продукцию
+                        .product-location-c
+                            a.product-location-c__item(href='#')
+                                .product-location-c__pic: img(src='img/p-1.jpg' alt='')
+                                .product-location-c__title Ресторан BEER PAIRING
+                                address.product-location-c__address
+                                    +icon('localion','product-location-c__address__ico')
+                                    | Москва, Тимура Фрунзе, 11, стр. 19
+                            a.product-location-c__item(href='#')
+                                .product-location-c__pic: img(src='img/p-2.jpg' alt='')
+                                .product-location-c__title Ресторан BEER PAIRING
+                                address.product-location-c__address
+                                    +icon('localion','product-location-c__address__ico')
+                                    | Москва, Тимура Фрунзе, 11, стр. 19
+                            a.product-location-c__item(href='#')
+                                .product-location-c__pic: img(src='img/p-3.jpg' alt='')
+                                .product-location-c__title Ресторан BEER PAIRING
+                                address.product-location-c__address
+                                    +icon('localion','product-location-c__address__ico')
+                                    | Москва, Тимура Фрунзе, 11, стр. 19
+
+                .min-container
+                    .review
+                        h2.h2.review__h2 Наши <span class="blue-txt">покупатели</span>
+                        ul.review__tab-nav
+                            li.active
+                                a.review__tab-nav__item(href='#id-tab-1' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/1.jpg' alt='')
+                                    .review__tab-nav__title Кирилл Ф.
+                                    .review__tab-nav__txt Санкт-Петербург
+                            li
+                                a.review__tab-nav__item(href='#id-tab-2' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/2.jpg' alt='')
+                                    .review__tab-nav__title Константин А.
+                                    .review__tab-nav__txt Санкт-Петербург
+                            li
+                                a.review__tab-nav__item(href='#id-tab-3' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/3.jpg' alt='')
+                                    .review__tab-nav__title Анатасия Ф.
+                                    .review__tab-nav__txt Санкт-Петербург
+                            li
+                                a.review__tab-nav__item(href='#id-tab-4' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/4.jpg' alt='')
+                                    .review__tab-nav__title Кирилл Ф.
+                                    .review__tab-nav__txt Санкт-Петербург
+                            li
+                                a.review__tab-nav__item(href='#id-tab-5' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/5.jpg' alt='')
+                                    .review__tab-nav__title Анатасия Ф.
+                                    .review__tab-nav__txt Санкт-Петербург
+                            li
+                                a.review__tab-nav__item(href='#id-tab-6' data-toggle="tab")
+                                    .review__tab-nav__pic: img(src='img/review/1.jpg' alt='')
+                                    .review__tab-nav__title Кирилл Ф.
+                                    .review__tab-nav__txt Санкт-Петербург
+                        .tab-content.review-tab-content
+                            #id-tab-1.tab-pane.fade.show.active.in
+                                .review-text
+                                    p Модель FX505DT-<br/> Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+                            #id-tab-2.tab-pane.fade
+                                .review-text
+                                    p Модель FX505DT-BQ137 Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+                            #id-tab-3.tab-pane.fade
+                                .review-text
+                                    p Модель FX505DT-BQ137 Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+                            #id-tab-4.tab-pane.fade
+                                .review-text
+                                    p Модель FX505DT-BQ137 Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+                            #id-tab-5.tab-pane.fade
+                                .review-text
+                                    p Модель FX505DT-BQ137 Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+                            #id-tab-6.tab-pane.fade
+                                .review-text
+                                    p Модель FX505DT-BQ137 Все BQ снабжаются матрицей PANDA LM156LF-CL03 с частотой 60 Гц и указанными выше недостатками. В остальном особых претензий нет. Засветов не обнаружил, матрица отлично отрегулирована. Желающим получить бонус в виде частоты 120 Гц нужно брать серию AL, а не BQ.
+                                    a.review-text__link(href='#') Читать весь отзыв
+
+
+
+
+
+
+
+    include ./include/footer
+    #overlay
+    include ./include/scripts
+    include ./include/modal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

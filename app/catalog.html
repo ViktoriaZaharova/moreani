@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Каталог</title>
+    <meta name="description" content="">
+    <meta name="author" content="Снисаренко Игорь">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="loading">
+    <!-- Мобильный поиск-->
+    <div class="mobile-search-form">
+      <div class="mobile-search-form__logo"><img src="img/logo.svg" alt=""></div>
+      <button class="close-modal-search" type="button" data-dismiss="modal">
+        <svg class="icon icon-close_big close-modal-search__ico">
+          <use xlink:href="img/svg-sprite/sprite.svg#close_big"></use>
+        </svg>
+      </button>
+      <form class="mobile-search-form-c" action="" method="">
+        <input class="m-search-input mobile-search-form__input" type="text" placeholder="Я ищу">
+        <button class="btn-blue mobile-search-form__btn" type="button">Найти</button>
+      </form>
+    </div>
+    <!-- Моббильное меню-->
+    <div class="mobile_menu close_menu scroll">
+      <div class="working-time">
+        <div class="working-time__calendar">
+          <div class="working-time__day">27</div>
+          <div class="working-time__mounth">июл</div>
+        </div>
+        <div class="working-time__txt"><span class="working-time__txt__item">Ближайшая доставка</span><span class="working-time__txt__item">Завтра, 12:00 – 22:00</span></div>
+      </div>
+      <nav class="main-nav"><a class="main-nav__item" href="#">О компании</a><a class="main-nav__item" href="#">Доставка</a><a class="main-nav__item" href="#">Рецепты</a><a class="main-nav__item" href="#">Оплата</a><a class="main-nav__item" href="#">Возвраты</a><a class="main-nav__item" href="#">Блог</a><a class="main-nav__item" href="#">Контакты</a></nav>
+      <div class="mobile-delivery">
+        <div class="b-delivery__status">
+          <svg class="icon icon-localion b-delivery__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#localion"></use>
+          </svg>Самовывоз
+        </div>
+        <input class="text-input-2 mobile-delivery__input" type="text" placeholder="Выбрать город">
+      </div><a class="btn-blue mobile_menu__cat" href="#">Каталог</a>
+      <div class="network network__header mobile_menu__network"><a class="network__item fb" href="#">
+          <svg class="icon icon-fb fb__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+          </svg></a><a class="network__item inst" href="#">
+          <svg class="icon icon-inst inst__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+          </svg></a><a class="network__item whatsap" href="#">
+          <svg class="icon icon-whatsap whatsap__ico network__ico">
+            <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+          </svg></a></div>
+    </div>
+    <header class="header">
+      <div class="min-container">
+        <div class="b-header">
+          <div class="b-header-top">
+            <div class="b-header-top__left"><a class="logo" href="#"><img src="img/logo.svg" alt=""></a>
+              <div class="nav-icon close_menu">
+                <div></div>
+              </div>
+              <nav class="nav-top">
+                <div class="resize-drag nav-wrapper">
+                  <ul class="nav-ul">
+                    <li><a class="main-nav__item" href="#">О компании</a></li>
+                    <li><a class="main-nav__item" href="#">Доставка</a></li>
+                    <li><a class="main-nav__item" href="#">Рецепты</a></li>
+                    <li><a class="main-nav__item" href="#">Оплата</a></li>
+                    <li><a class="main-nav__item" href="#">Возвраты</a></li>
+                    <li><a class="main-nav__item" href="#">Блог</a></li>
+                    <li><a class="main-nav__item" href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="b-header-top__right">
+              <div class="b-delivery b-header__delivery">
+                <div class="b-delivery__change-city">
+                  <button class="b-delivery__btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Русский
+                    <svg class="icon icon-arrow-down b-delivery__btn__ico">
+                      <use xlink:href="img/svg-sprite/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu b-delivery__dropdown"><a class="dropdown-menu__item" href="#">Москва</a><a class="dropdown-menu__item" href="#">Санкт Петербург</a><a class="dropdown-menu__item" href="#">Петропавловск-Камчатский</a><a class="dropdown-menu__item" href="#">Сочи</a></div>
+                </div>
+                <div class="b-delivery__status">
+                  <svg class="icon icon-localion b-delivery__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#localion"></use>
+                  </svg>Самовывоз
+                </div>
+              </div>
+              <div class="working-time">
+                <div class="working-time__txt"><span class="working-time__txt__item">Ближайшая доставка</span><span class="working-time__txt__item">Завтра, 12:00 – 22:00</span></div>
+                <div class="working-time__calendar">
+                  <div class="working-time__day">27</div>
+                  <div class="working-time__mounth">июл</div>
+                </div>
+              </div>
+              <div class="network network__header network-slider owl-carousel owl-theme"><a class="network__item fb" href="#">
+                  <svg class="icon icon-fb fb__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+                  </svg></a><a class="network__item inst" href="#">
+                  <svg class="icon icon-inst inst__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+                  </svg></a><a class="network__item whatsap" href="#">
+                  <svg class="icon icon-whatsap whatsap__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-header-middle-bg">
+        <div class="min-container">
+          <div class="b-header-middle">
+            <div class="b-header-callback"><a class="b-header-callback__tel" href="tel:+74951202498">+7 (495) 120-24-98</a><a class="b-header-callback__callback" href="#" data-target="#modal-callback" data-toggle="modal">Заказать звонок</a></div>
+            <div class="b-header-serch-c">
+              <div class="b-header-serch-c__left"><a class="catalog-link b-header-serch-c__catalog-link" href="#">
+                  <svg class="icon icon-burger catalog-link__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#burger"></use>
+                  </svg>Каталог</a><a class="sale-link b-header-serch-c__sale-link" href="#">
+                  <svg class="icon icon-procent sale-link__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#procent"></use>
+                  </svg></a>
+                <form action="" method="">
+                  <div class="header-search">
+                    <input class="header-search__input" type="text" placeholder="Я ищу">
+                    <button class="header-search__btn" type="button">
+                      <svg class="icon icon-loop header-search__btn__ico">
+                        <use xlink:href="img/svg-sprite/sprite.svg#loop"></use>
+                      </svg>
+                    </button>
+                    <button class="mobile-search" type="button">
+                      <svg class="icon icon-loop mobile-search__ico">
+                        <use xlink:href="img/svg-sprite/sprite.svg#loop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="b-header-serch-c__right">
+                <div class="auroriz"><a class="auroriz__pic" href="#">
+                    <svg class="icon icon-user auroriz__ico">
+                      <use xlink:href="img/svg-sprite/sprite.svg#user"></use>
+                    </svg></a>
+                  <div class="auroriz__text"><a class="auroriz__link" href="#" data-target="#modal-login" data-toggle="modal">Вход на сайт</a><a class="auroriz__link" href="#" data-target="#modal-reg" data-toggle="modal">Регистрация</a></div>
+                </div><a class="header-fav" href="#">
+                  <svg class="icon icon-fav header-fav__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#fav"></use>
+                  </svg><span class="header-fav__count">33</span></a><a class="auroriz-mobile" href="#">
+                  <svg class="icon icon-user auroriz__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#user"></use>
+                  </svg></a><a class="header-cart" href="#">
+                  <svg class="icon icon-cart header-cart__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                  </svg><span class="header-cart__count">33</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-container">
+        <div class="b-header-bottom">
+          <div class="header-slider owl-carousel owl-theme"><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-1 header-slide-item__ico header-slide-item__ico--1">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-1"></use>
+              </svg>Греческая кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-2 header-slide-item__ico header-slide-item__ico--2">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-2"></use>
+              </svg>Все для суши</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-3 header-slide-item__ico header-slide-item__ico--3">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-3"></use>
+              </svg>Мексиканская кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-4 header-slide-item__ico header-slide-item__ico--4">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-4"></use>
+              </svg>Итальянская кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-5 header-slide-item__ico header-slide-item__ico--5">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-5"></use>
+              </svg>Здоровое питание</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-6 header-slide-item__ico header-slide-item__ico--6">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-6"></use>
+              </svg>Детские товары</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-7 header-slide-item__ico header-slide-item__ico--7">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-7"></use>
+              </svg>Вегетерианская кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-1 header-slide-item__ico header-slide-item__ico--1">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-1"></use>
+              </svg>Греческая кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-2 header-slide-item__ico header-slide-item__ico--2">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-2"></use>
+              </svg>Все для суши</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-3 header-slide-item__ico header-slide-item__ico--3">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-3"></use>
+              </svg>Мексиканская кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-4 header-slide-item__ico header-slide-item__ico--4">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-4"></use>
+              </svg>Итальянская кухня</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-5 header-slide-item__ico header-slide-item__ico--5">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-5"></use>
+              </svg>Здоровое питание</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-6 header-slide-item__ico header-slide-item__ico--6">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-6"></use>
+              </svg>Детские товары</a><a class="header-slide-item" href="#">
+              <svg class="icon icon-i-7 header-slide-item__ico header-slide-item__ico--7">
+                <use xlink:href="img/svg-sprite/sprite.svg#i-7"></use>
+              </svg>Вегетерианская кухня</a></div>
+        </div>
+      </div>
+    </header>
+    <article class="content">
+      <div class="min-container">
+        <div class="page-layout">
+          <div class="breadcrumps"><a class="breadcrumps__item" href="#">Главная</a><a class="breadcrumps__item" href="#">Каталог</a><span class="breadcrumps__item">Икра</span></div>
+          <h1 class="h1 page-layout__h1">Икра</h1>
+          <div class="catalog">
+            <button class="btn-blue show-filter" type="button">Фильтры</button>
+            <div class="catalog__filter">
+              <form method="" action="">
+                <div class="catalog__filter__inner" id="catalog-filter">
+                  <div class="catalog-filter">
+                    <div class="catalog-filter__title">Икра</div>
+                    <div class="goods-change"><a class="goods-change__item goods-change__item--active" href="#">Из красной рыбы</a><a class="goods-change__item" href="#">Из белой рыбы</a></div>
+                  </div>
+                  <div class="catalog-filter">
+                    <div class="catalog-filter__title">Цена</div>
+                    <div class="slider-price">
+                      <div class="polzunok-container-5">
+                        <div class="ui_price_sl">
+                          <div class="ui_price_sl__item">
+                            <label class="ui_price_sl__label" for="filterFrom">От</label>
+                            <input class="ui_price_sl__input polzunok-input-5-left " id="filterFrom" type="text" value="2000">
+                          </div><span class="divider">-</span>
+                          <div class="ui_price_sl__item">
+                            <label class="ui_price_sl__label" for="filterTo">До</label>
+                            <input class="ui_price_sl__input polzunok-input-5-right " id="filterTo" type="text" value="3000">
+                          </div>
+                        </div>
+                        <div class="polzunok-5" data-min="0" data-max="5000"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordeon" id="accordion">
+                    <div class="accordeon__panel">
+                      <div class="accordeon__heading"><a class="accordeon__link" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true">Бренд
+                          <svg class="icon icon-carret-down accordeon__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#carret-down"></use>
+                          </svg></a></div>
+                      <div class="accordeon__collapse collapse in" id="collapse-1">
+                        <div class="accordeon__body">
+                          <div class="accorion-search">
+                            <input class="input accorion-search__input" type="text" placeholder="Я ищу">
+                          </div>
+                          <div class="accorion-check-list scroll">
+                            <div class="check accorion-check-list__check">
+                              <input id="f1" type="checkbox" name="s2" value="1" checked>
+                              <label for="f1">Agama (10)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f2" type="checkbox" name="s2" value="1">
+                              <label for="f2">Agama (10)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f3" type="checkbox" name="s2" value="1">
+                              <label for="f3">Arti Seafood (1)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f4" type="checkbox" name="s2" value="1">
+                              <label for="f4">Arti Seafood (1)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f5" type="checkbox" name="s2" value="1">
+                              <label for="f5">Borealis (11)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f6" type="checkbox" name="s2" value="1">
+                              <label for="f6">Borealis (11)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f7" type="checkbox" name="s2" value="1">
+                              <label for="f7">Flipper (6)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f8" type="checkbox" name="s2" value="1">
+                              <label for="f8">Flipper (6)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f9" type="checkbox" name="s2" value="1">
+                              <label for="f9">Murex (2)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f10" type="checkbox" name="s2" value="1">
+                              <label for="f10">Murex (2)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f41" type="checkbox" name="s2" value="1" checked>
+                              <label for="f41">Agama (10)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f42" type="checkbox" name="s2" value="1">
+                              <label for="f42">Agama (10)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f43" type="checkbox" name="s2" value="1">
+                              <label for="f43">Arti Seafood (1)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f44" type="checkbox" name="s2" value="1">
+                              <label for="f44">Arti Seafood (1)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f45" type="checkbox" name="s2" value="1">
+                              <label for="f45">Borealis (11)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f46" type="checkbox" name="s2" value="1">
+                              <label for="f46">Borealis (11)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f47" type="checkbox" name="s2" value="1">
+                              <label for="f47">Flipper (6)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f48" type="checkbox" name="s2" value="1">
+                              <label for="f48">Flipper (6)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f49" type="checkbox" name="s2" value="1">
+                              <label for="f49">Murex (2)</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f50" type="checkbox" name="s2" value="1">
+                              <label for="f50">Murex (2)</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordeon__panel">
+                      <div class="accordeon__heading"><a class="accordeon__link" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="true">Страна производителя
+                          <svg class="icon icon-carret-down accordeon__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#carret-down"></use>
+                          </svg></a></div>
+                      <div class="accordeon__collapse collapse in" id="collapse-2">
+                        <div class="accordeon__body">
+                          <div class="accorion-search">
+                            <input class="input accorion-search__input" type="text" placeholder="Я ищу">
+                          </div>
+                          <div class="accorion-check-list scroll">
+                            <div class="check accorion-check-list__check">
+                              <input id="f11" type="checkbox" name="s2" value="1" checked>
+                              <label for="f11">Армения</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f12" type="checkbox" name="s2" value="1">
+                              <label for="f12">Беларусь</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f13" type="checkbox" name="s2" value="1">
+                              <label for="f13">Китай</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f14" type="checkbox" name="s2" value="1">
+                              <label for="f14">Перу</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f15" type="checkbox" name="s2" value="1">
+                              <label for="f15">Россия</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f16" type="checkbox" name="s2" value="1">
+                              <label for="f16">Турция</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f17" type="checkbox" name="s2" value="1">
+                              <label for="f17">Фарерские о-ва</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f18" type="checkbox" name="s2" value="1">
+                              <label for="f18">Чехия</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f19" type="checkbox" name="s2" value="1">
+                              <label for="f19">Чили</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f20" type="checkbox" name="s2" value="1">
+                              <label for="f20">Украина</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordeon__panel">
+                      <div class="accordeon__heading"><a class="accordeon__link" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false">Доп. фильтры
+                          <svg class="icon icon-carret-down accordeon__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#carret-down"></use>
+                          </svg></a></div>
+                      <div class="accordeon__collapse collapse" id="collapse-3">
+                        <div class="accordeon__body">
+                          <div class="accorion-search">
+                            <input class="input accorion-search__input" type="text" placeholder="Я ищу">
+                          </div>
+                          <div class="accorion-check-list scroll">
+                            <div class="check accorion-check-list__check">
+                              <input id="f21" type="checkbox" name="s2" value="1" checked>
+                              <label for="f21">Армения</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f22" type="checkbox" name="s2" value="1">
+                              <label for="f22">Беларусь</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f23" type="checkbox" name="s2" value="1">
+                              <label for="f23">Китай</label>
+                            </div>
+                            <div class="check accorion-check-list__check">
+                              <input id="f24" type="checkbox" name="s2" value="1">
+                              <label for="f24">Перу</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="catalog__content">
+              <div class="catalog-sort"><span class="catalog-sort__title">Сортировать по:</span><a class="catalog-sort__item catalog-sort__item--active" href="#">По умолчанию</a><a class="catalog-sort__item" href="#">Популярности</a><a class="catalog-sort__item" href="#">Цене</a><a class="catalog-sort__item" href="#">Скидке</a></div>
+              <div class="b-goods catalog__b-goods">
+                <div class="b-goods-list catalog__b-goods-list">
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row">
+                        <div class="number"><span class="minus">-</span>
+                          <input class="number__input" type="text" size="1" value="1">
+                          <div class="plus">+</div>
+                        </div><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/4.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row">
+                        <div class="number"><span class="minus">-</span>
+                          <input class="number__input" type="text" size="1" value="1">
+                          <div class="plus">+</div>
+                        </div><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/4.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row">
+                        <div class="number"><span class="minus">-</span>
+                          <input class="number__input" type="text" size="1" value="1">
+                          <div class="plus">+</div>
+                        </div><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/4.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row">
+                        <div class="number"><span class="minus">-</span>
+                          <input class="number__input" type="text" size="1" value="1">
+                          <div class="plus">+</div>
+                        </div><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/4.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row">
+                        <div class="number"><span class="minus">-</span>
+                          <input class="number__input" type="text" size="1" value="1">
+                          <div class="plus">+</div>
+                        </div><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/4.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__new">Новинка</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="b-goods-list__item">
+                    <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                        <div class="sale-list">
+                          <div class="sale-list__sale">-15%</div>
+                          <div class="sale-list__hit">Хит</div>
+                        </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                      <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                      <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                      <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                          <svg class="icon icon-cart add-cart__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                          </svg></a><a class="fav-btn" href="javascript: void(0);">
+                          <svg class="icon icon-fav-2 fav-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                          </svg></a><a class="compare-btn" href="#">
+                          <svg class="icon icon-card-ico-2 compare-btn__ico">
+                            <use xlink:href="img/svg-sprite/sprite.svg#card-ico-2"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination"><a class="pagination__prev" href="#">
+                  <svg class="icon icon-arrow-pagi pagination__arrow pagination__prev__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#arrow-pagi"></use>
+                  </svg>Предыдущая страница</a>
+                <div class="pagination__pages"><a class="pagination__link pagination__link--active" href="#">1</a><a class="pagination__link" href="#">2</a><a class="pagination__link" href="#">3</a><a class="pagination__link" href="#">4</a><a class="pagination__link" href="#">5</a><a class="pagination__link" href="#">6</a><a class="pagination__link" href="#">7</a><span class="pagination__span">...</span></div><a class="pagination__next" href="#">Следующая страница
+                  <svg class="icon icon-arrow-pagi pagination__arrow pagination__next__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#arrow-pagi"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-view">
+            <div class="b-goods catalog-view__b-goods">
+              <h2 class="h2 b-goods__h2">Ранее <span class="blue-txt">просмотренные</span></h2>
+              <div class="b-goods-list">
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')
+                      +icon('card-ico-2','compare-btn__ico')
+                      
+                      -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-goods catalog-view__b-goods">
+              <h2 class="h2 b-goods__h2">Товары <span class="blue-txt">по акции</span></h2>
+              <div class="b-goods-list">
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')
+                      +icon('card-ico-2','compare-btn__ico')
+                      
+                      -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-goods catalog-view__b-goods">
+              <h2 class="h2 b-goods__h2">Популярные <span class="blue-txt">товары</span></h2>
+              <div class="b-goods-list">
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/1.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/2.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__new">Новинка</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')+icon('card-ico-2','compare-btn__ico')
+                      -->
+                    </div>
+                  </div>
+                </div>
+                <div class="b-goods-list__item">
+                  <div class="b-goods-list-item"><a class="b-goods-list-item__pic" href="#"><img src="img/goods/3.png" alt="">
+                      <div class="sale-list">
+                        <div class="sale-list__sale">-15%</div>
+                        <div class="sale-list__hit">Хит</div>
+                      </div></a><a class="b-goods-list-item__title" href="#">Карп свежемороженый, тушка ПБГ*</a>
+                    <div class="b-goods-list-item__price"><span class="b-goods-list-item__new-price">160,69 ₽</span><span class="b-goods-list-item__old-price">76,30 ₽</span></div>
+                    <div class="b-rating b-goods-list-item__rating"><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-1.svg" alt=""></a><a class="b-rating__star" href="#"><img src="img/star-2.svg" alt=""></a></div>
+                    <div class="b-goods-list-item__btn-row"><a class="add-cart" href="#">
+                        <svg class="icon icon-cart add-cart__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#cart"></use>
+                        </svg></a><a class="fav-btn" href="javascript: void(0);">
+                        <svg class="icon icon-fav-2 fav-btn__ico">
+                          <use xlink:href="img/svg-sprite/sprite.svg#fav-2"></use>
+                        </svg></a>
+                      <!--a.compare-btn(href='#')
+                      +icon('card-ico-2','compare-btn__ico')
+                      
+                      -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer class="footer">
+      <div class="b-footer">
+        <div class="min-container">
+          <div class="b-footer-top">
+            <div class="b-footer-contact">
+              <div class="b-footer-contact__item">
+                <div class="b-footer-contact__ico"><img src="img/phone.svg" alt=""></div><a class="b-footer-contact__title" href="tel:+74951202498">+7 (495)120-24-98</a>
+                <div class="b-footer-contact__desc">Многоканальный номер</div>
+              </div>
+              <div class="b-footer-contact__item">
+                <div class="b-footer-contact__ico"><img src="img/people.svg" alt=""></div>
+                <div class="b-footer-contact__title">Покупателям</div>
+                <div class="b-footer-contact__desc"><a class="b-footer-contact__desc__link" href="mailto:info@moreani.ru">info@moreani.ru</a><a class="b-footer-contact__desc__link" href="tel:+74951202498">+7 (495)120-24-98</a></div>
+              </div>
+              <div class="b-footer-contact__item">
+                <div class="b-footer-contact__ico"><img src="img/located.svg" alt=""></div>
+                <div class="b-footer-contact__title">Адрес главного офиса</div>
+                <div class="b-footer-contact__desc">125438, г. Москва, ул. Войкова, д. 4, стр. 1</div>
+              </div>
+              <div class="b-footer-contact__item">
+                <div class="b-footer-contact__ico"><img src="img/clock.svg" alt=""></div>
+                <div class="b-footer-contact__title">Время работы</div>
+                <div class="b-footer-contact__desc"><span>Пн–Пт: с 08:00 до 20:00</span><span>Сб–Вс: с 09:00 до 20:00</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer-middle">
+            <div class="b-footer-middle__col b-footer-middle__col--1">
+              <div class="b-footer-middle__logo"><img src="img/logo.svg" alt=""></div>
+              <nav class="ft-nav"><a class="ft-nav__item" href="#">О компании</a><a class="ft-nav__item" href="#">Доставка</a><a class="ft-nav__item" href="#">Оплата</a><a class="ft-nav__item" href="#">Возвраты</a><a class="ft-nav__item" href="#">Контакты</a></nav>
+            </div>
+            <div class="b-footer-middle__col b-footer-middle__col--2">
+              <div class="b-footer-middle__title">Мы принимаем к оплате</div>
+              <div class="list-bank"><span class="list-bank__item"><img src="img/visa.svg" alt=""></span><span class="list-bank__item"><img src="img/mastercard.svg" alt=""></span><span class="list-bank__item"><img src="img/mir.svg" alt=""></span></div>
+            </div>
+            <div class="b-footer-middle__col b-footer-middle__col--3">
+              <div class="b-footer-middle__title">Мы в соцсетях</div>
+              <div class="network"><a class="network__item fb" href="#">
+                  <svg class="icon icon-fb fb__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#fb"></use>
+                  </svg></a><a class="network__item inst" href="#">
+                  <svg class="icon icon-inst inst__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#inst"></use>
+                  </svg></a><a class="network__item whatsap" href="#">
+                  <svg class="icon icon-whatsap whatsap__ico network__ico">
+                    <use xlink:href="img/svg-sprite/sprite.svg#whatsap"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-footer-bottom">
+        <div class="min-container">
+          <div class="b-footer-bottom__politic"><a class="b-footer-bottom__politic__item" href="#">Пользовательское соглашение</a><a class="b-footer-bottom__politic__item" href="#">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+    <div id="overlay"></div>
+    <script src="js/scrips.min.js" async></script>
+    <!--.modal.scroll.fade#modal-1(tabindex="-1")
+    .modal-calc
+        button.close-modal(type="button" data-dismiss="modal")
+            +icon('close_big','close-modal__ico')
+        .modal-calc__title Калькулятор <span class="blue-text font-black">тарифов</span>
+        form(action='' method='')
+            .calc-content
+                .calc-content__left
+                    .form-send(style='display: none;')
+                        .form-send__row
+                            label.form-send__label(for='') Ваше имя
+                            input.text-input(type='text' placeholder='Имя' required)
+                        .form-send__row
+                            label.form-send__label(for='') Телефон
+                            input.text-input.phone_input(type='tel' placeholder='Телефон' required)
+                        .form-send__row
+                            label.form-send__label(for='') E-mail
+                            input.text-input(type='email' placeholder='E-mail' required)
+                        .check.form-send__check
+                            input#r21(type="checkbox" name="s2" value="1" checked required)
+                            label(for="r21" ) Согласие на обработку персональных данных
+                        .form-send__row
+                            button.btn-blue.form-send__btn(type='button') Отправить заявку
+                    .form-send
+                        .form-send__row
+                            label.form-send__label(for='') Количество пользователей:
+                            .number
+                                span.minus
+                                    b
+                                input.text-input(type="text" value="1" size="5")
+                                .plus
+                                    b
+                        .form-send__row
+                            label.form-send__label(for='') Размер ящиков, GB:
+                            #slider
+                                span.min_val 5
+                                span.max_val 15
+                                #custom-handle.ui-slider-handle
+                        .form-send__row
+                            label.form-send__label(for='') Количество лицензий Skype:
+                            .number
+                                span.minus
+                                    b
+                                input.text-input(type="text" value="1" size="5")
+                                .plus
+                                    b
+                        .form-send__row
+                            label.form-send__label(for='') Файловое хранилище
+                            .check.form-send__check--custom
+                                input#r23(type="checkbox" name="s2" value="1" required)
+                                label(for="r23" )
+                        .form-send__row
+                            button.btn-blue.form-send__btn(type='submit') Отправить заявку
+    
+                .calc-content__right
+                    .calc-sum
+                        .calc-sum-item
+                            .calc-sum-item__price 2 100 руб. / мес.
+                            p 3x * <span class='medium'>700 руб.</span>
+                            p Тариф «Корпоративный»
+                        .calc-sum-item
+                            .calc-sum-item__price 800 руб. / мес.
+                            p 2x * <span class='medium'>400 руб.</span>
+                            p Тариф «Почтовый»
+                        .calc-sum-item
+                            .calc-sum-item__price 1 750 руб. / мес.
+                            p 5x * <span class='medium'>Объем 50 Гб</span>
+                            p Тариф «Хранилище»
+                        .calc-sum-total
+                            .calc-sum-total__title 4 650 руб/мес.
+                            .calc-sum-total__desc Общая стоимость
+    -->
+  </body>
+</html>
