@@ -511,6 +511,62 @@ svg path {
   font-weight: bold;
 }
 
+.history-orders__details-item-wrapper .button-group-row {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-group-row .btn-pay-order {
+  margin: 0 58px 0 0;
+}
+
+.history-orders__details-box {
+  .history-orders__details-content {
+    width: 100%;
+  }
+
+  .history-orders__details-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.list-payment {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-payment__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #58595B;
+  width: 140px;
+  margin: 0 30px 30px 0;
+  &:last-child {
+    margin: 0 0 30px;
+  }
+}
+
+.list-payment__icon {
+  width: 100%;
+  border: 1px solid #EAEEF3;
+  border-radius: 3px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 7px 14px;
+  margin: 0 auto 10px;
+}
+
+
+
 @media screen and (max-width: 1199px) {
   .cabinet-box {
     width: 270px;
