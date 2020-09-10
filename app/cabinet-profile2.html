@@ -511,7 +511,7 @@
                 <div class="tab-pane fade show active in" id="history-orders">
                     <div class="h1">Заказы в статусе «Принят, ожидается оплата»</div>
 
-                    <div class="history-orders">
+                    <div class="history-orders history-orders-page">
 
                         <div class="history-orders__details history-orders__details-box">
                             <div class="history-orders__details-item">
@@ -536,7 +536,8 @@
                                                 <span class="list-payment__name">Виза</span>
                                             </a>
                                             <a href="#" class="list-payment__links">
-                                                <span class="list-payment__icon"><img src="img/mastercard.svg" alt=""></span>
+                                                <span class="list-payment__icon"><img src="img/mastercard.svg"
+                                                                                      alt=""></span>
                                                 <span class="list-payment__name">Мастеркард</span>
                                             </a>
                                             <a href="#" class="list-payment__links">
@@ -544,7 +545,8 @@
                                                 <span class="list-payment__name">Мир</span>
                                             </a>
                                             <a href="#" class="list-payment__links">
-                                                <span class="list-payment__icon"><img src="img/pay-pal.png" alt=""></span>
+                                                <span class="list-payment__icon"><img src="img/pay-pal.png"
+                                                                                      alt=""></span>
                                                 <span class="list-payment__name">PayPal</span>
                                             </a>
                                             <a href="#" class="list-payment__links">
@@ -556,18 +558,36 @@
 
                                         <a href="#" class="links-light-blue links-orders-history-details">Назад</a>
 
-                                        <div class="history-orders__details-line">
-                                            <div class="parameters-orders__name">
-                                                <p>Отгрузка №4/2,</p>
-                                                <div class="parameters-orders__status bg-light-pink">Не отгружено</div>
-                                            </div>
-                                            <div class="parameters-orders__sum">Сумма к оплате: 1299 ₽</div>
-                                        </div>
+                                        <div class="history-orders__details-line-box">
 
-                                        <a href="#" class="links-light-blue links-orders-history-details">Подробнее о заказе</a>
+
+                                            <div class="history-orders__details-line">
+                                                <div class="parameters-orders__name">
+                                                    <p>Отгрузка №4/2,</p>
+                                                    <div class="parameters-orders__status bg-light-pink">Не отгружено
+                                                    </div>
+                                                </div>
+
+                                                <div class="parameters-orders__name">
+                                                    <div class="parameters-orders__sum">Сумма к оплате: 1299 ₽</div>
+                                                    <div class="parameters-orders__status bg-grey">Ожидает обработки
+                                                    </div>
+                                                </div>
+
+                                                <div class="parameters-orders__name">
+                                                    <div class="parameters-orders__sum">Служба доставки: Без доставки
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
                                     </div>
 
                                     <div class="button-group button-group-row">
+
+                                        <a href="#" class="links-light-blue links-orders-history-details">Подробнее
+                                            о заказе</a>
                                         <a href="#" class="btn-blue btn-pay-order">Повторить заказ</a>
                                         <a href="#" class="canceling-btn">
                                             Отменить
@@ -582,7 +602,7 @@
 
                     <div class="h1">Заказы в статусе «Оплачен, формируется к отправке»</div>
 
-                    <div class="history-orders">
+                    <div class="history-orders history-orders-page">
 
                         <div class="history-orders__details">
                             <div class="history-orders__details-item">
@@ -593,33 +613,16 @@
                                 <div class="history-orders__details-item-wrapper">
                                     <div class="history-orders__details-content">
 
-                                        <div class="history-orders__details-line">
-                                            <div class="name-customer">Константин
-                                                Константинопольский
+                                            <div class="history-orders__details-line">
+                                                <div class="parameters-orders__name">
+                                                    <p>Счет №4/1 от 19.08.2020. Наличные курьеру</p>
+                                                    <div class="parameters-orders__status bg-green">Оплачено</div>
+                                                </div>
+                                                <div class="parameters-orders__sum">Сумма к оплате: 1299 ₽</div>
                                             </div>
 
-                                            <div class="status-orders">
-                                                <p>Принят,</p>
-                                                <span>ожидается оплата</span>
-                                            </div>
-
-                                            <div class="date-orders">18.08.2020</div>
-
-                                            <div class="sum-orders">
-                                                <p>1299 ₽</p>
-                                                <span>сумма</span>
-                                            </div>
-                                        </div>
-
-                                        <a href="#" class="links-light-blue links-orders-history-details">Подробнее</a>
                                     </div>
 
-                                    <div class="button-group">
-                                        <a href="#" class="btn-blue btn-pay-order">Оплатить заказ</a>
-                                        <a href="#" class="canceling-btn">
-                                            Отменить
-                                        </a>
-                                    </div>
 
                                 </div>
                             </div>

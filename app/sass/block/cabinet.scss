@@ -410,6 +410,7 @@ svg path {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 0 6px;
+  width: 100%;
   p {
     margin: 0;
     color: #58595B;
@@ -427,6 +428,7 @@ svg path {
   justify-content: center;
   text-align: center;
   line-height: 17px;
+  border-radius: 3px;
 }
 
 .bg-light-pink {
@@ -493,7 +495,9 @@ svg path {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 0 26px;
-
+  &:last-child {
+    margin: 0;
+  }
   span {
     display: block;
   }
@@ -517,11 +521,21 @@ svg path {
   justify-content: flex-end;
 }
 
-.button-group-row .btn-pay-order {
-  margin: 0 58px 0 0;
+.button-group-row {
+  .btn-pay-order {
+    margin: 0 58px 0 0;
+  }
+
+  .links-orders-history-details {
+    margin: 0 auto 0 0 ;
+  }
 }
 
 .history-orders__details-box {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .history-orders__details-content {
     width: 100%;
   }
@@ -529,6 +543,14 @@ svg path {
   .history-orders__details-line {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .parameters-orders__name {
+    margin: 0 0 13px;
+    width: 100%;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -564,6 +586,33 @@ svg path {
   padding: 7px 14px;
   margin: 0 auto 10px;
 }
+
+.bg-grey {
+  background: #D2D6DD;
+}
+
+.parameters-orders__status.bg-grey {
+  color: rgba(88, 89, 91, 0.7);
+}
+
+.history-orders-page {
+  margin: 0 0 60px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.history-orders__details-line-box {
+  margin: 36px 0 0;
+  width: 100%;
+
+
+}
+
+.bg-green {
+  background: #96DE77;
+}
+
 
 
 
@@ -755,6 +804,10 @@ svg path {
     flex-direction: column;
     align-items: center;
   }
+  .button-group-row .btn-pay-order {
+    margin: 0 20px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -780,6 +833,22 @@ svg path {
   .parameters-orders__title {
     font-size: 16px;
     padding: 10px 20px;
+  }
+
+  .history-orders__details-item-wrapper .button-group {
+    flex-direction: column;
+  }
+
+  .button-group-row .btn-pay-order {
+    margin: 10px auto;
+  }
+
+  .list-payment__links {
+    margin-right: 0;
+  }
+
+  .list-payment {
+    justify-content: space-around;
   }
 
 }
