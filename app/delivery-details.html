@@ -269,10 +269,10 @@
 
             <div class="delivery-page">
                 <div class="delivery-content">
-                    <div class="delivery-page__selections">
+                    <form method="post" class="delivery-page__selections">
                         <div class="delivery-page__box">
                             <div class="form-city-title">Откуда</div>
-                            <form method="post" class="form-city">
+                            <div class="form-city">
                                 <label>
                                     <input type="text" placeholder="Россия, Москва">
                                 </label>
@@ -281,12 +281,12 @@
                                         <use xlink:href="img/svg-sprite/main-sprite.svg#location"></use>
                                     </svg>
                                 </button>
-                            </form>
+                            </div>
                         </div>
 
                         <div class="delivery-page__box">
                             <div class="form-city-title">Куда</div>
-                            <form method="post" class="form-city">
+                            <div class="form-city">
                                 <label>
                                     <input type="text" placeholder="Россия, Москва">
                                 </label>
@@ -295,21 +295,45 @@
                                         <use xlink:href="img/svg-sprite/main-sprite.svg#location"></use>
                                     </svg>
                                 </button>
-                            </form>
+                            </div>
                         </div>
 
                         <div class="delivery-page__box delivery-page__box-size">
                             <div class="form-city-title">Вес</div>
-                            <form method="post" class="form-city">
+                            <div class="form-city">
                                 <label class="number">
                                     <span class="minus">-</span>
-                                    <input class="number__input" type="text" placeholder="1 кг">
+                                    <input class="number__input" type="text" placeholder="1 кг" value="1 кг">
                                     <span class="plus">+</span>
                                 </label>
                                 <div class="tov-price-count__title">кг</div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="delivery-page__box delivery-page__box-size">
+                            <div class="form-city-title">Объем</div>
+                            <div class="form-city">
+                                <label class="number">
+                                    <span class="minus">-</span>
+                                    <input class="number__input" type="text" placeholder="1" value="0,01" size="1">
+                                    <span class="plus">+</span>
+                                </label>
+                                <div class="tov-price-count__title">м<sup>3</sup></div>
+                            </div>
+                        </div>
+
+                        <div class="list-column">
+                            <div class="check accorion-check-list__check">
+                                <input id="f1" type="checkbox" name="s2" value="1" checked>
+                                <label for="f1">Страхование</label>
+                            </div>
+
+                            <div class="check accorion-check-list__check">
+                                <input id="f2" type="checkbox" name="s2" value="1">
+                                <label for="f2">Особый температурный режим</label>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
 
