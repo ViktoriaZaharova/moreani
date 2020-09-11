@@ -756,7 +756,6 @@ svg path {
 .delivery-page__maps {
   width: 100%;
   height: 280px;
-  margin: 30px 0 0;
   border: none;
   iframe {
     width: 100%;
@@ -775,6 +774,7 @@ svg path {
 
 .delivery-page__box {
   width: 48.5%;
+  margin: 0 0 30px;
   form {
     width: 100%;
     position: relative;
@@ -782,7 +782,7 @@ svg path {
     label {
       display: block;
       width: 100%;
-
+      margin: 0;
       input {
         width: 100%;
         background: #FFFFFF;
@@ -799,6 +799,8 @@ svg path {
           }
         }
       }
+
+
     }
 
     button {
@@ -811,6 +813,40 @@ svg path {
         width: 100%;
         height: 100%;
       }
+    }
+
+    .number {
+      width: 90%;
+      position: relative;
+    }
+
+    .minus, .plus {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      background: #9BB8E9;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .plus {
+      right: 5px;
+    }
+
+    .minus {
+      right: 50px;
+    }
+    
+    .number__input {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      padding: 0 90px 0 18px;
+      font-weight: bold;
     }
   }
 }
@@ -860,6 +896,11 @@ svg path {
 .delivery-total__box-sum {
   font-size: 30px;
   font-weight: bold;
+}
+.form-city-title{
+  width: 100%;
+  margin: 0 0 10px;
+  color: rgba(88, 89, 91, 0.7);
 }
 
 @media screen and (max-width: 1199px) {
