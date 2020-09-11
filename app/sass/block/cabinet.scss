@@ -770,8 +770,97 @@ svg path {
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
 }
 
+.delivery-page__box {
+  width: 48.5%;
+  form {
+    width: 100%;
+    position: relative;
+
+    label {
+      display: block;
+      width: 100%;
+
+      input {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #D2D6DD;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0 50px 0 18px;
+        height: 50px;
+        color: rgba(88, 89, 91, 0.7);
+        &:hover, &:focus {
+          color: #58595B;
+          &::placeholder {
+            color: #58595B;
+          }
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      padding: 10px 13px;
+      .svg-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+.delivery-total {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px #EAF1FD;
+  border-radius: 3px;
+  width: 370px;
+  padding: 20px 30px;
+}
+
+.delivery-total__box {
+  border-bottom: 1px solid #D2D6DD;
+  padding: 20px 0 15px;
+  &:last-child {
+    border: none;
+  }
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.delivery-total__line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 5px;
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 19px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  strong {
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+
+.delivery-total__box-sum {
+  font-size: 30px;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1199px) {
   .cabinet-box {
@@ -863,6 +952,30 @@ svg path {
 
   .table-orders {
     font-size: 14px;
+  }
+
+  .delivery-total {
+    width: 280px;
+  }
+
+  .delivery-total__box-sum {
+    font-size: 24px;
+  }
+
+  .delivery-total__box {
+    padding: 15px 0;
+  }
+
+  .delivery-content {
+    width: calc(100% - 280px);
+  }
+
+  .delivery-page__box form button {
+    display: flex;
+  }
+
+  .delivery-total__line strong {
+    font-size: 18px;
   }
 }
 
@@ -972,6 +1085,16 @@ svg path {
   .history-chating .history-orders__details-title .chating-val {
     margin: 0;
   }
+
+  .delivery-total {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+
+  .delivery-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1049,6 +1172,15 @@ svg path {
 
   .history-chating__content-text {
     font-size: 14px;
+  }
+
+  .delivery-page__box {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .delivery-total__line strong {
+    font-size: 16px;
   }
 }
 
