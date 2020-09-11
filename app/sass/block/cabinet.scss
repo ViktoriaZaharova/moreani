@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .cabinet {
   display: flex;
   flex-wrap: wrap;
@@ -513,6 +518,15 @@ svg path {
   max-width: 160px;
   width: 100%;
   font-weight: bold;
+}
+
+.sum-orders {
+  display: flex;
+  align-items: center;
+  span {
+    display: inline-block;
+    margin: 0 0 0 5px;
+  }
 }
 
 .history-orders__details-item-wrapper .button-group-row {
