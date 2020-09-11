@@ -613,8 +613,117 @@ svg path {
   background: #96DE77;
 }
 
+.form-cabinet-callback {
+  width: 100%;
+  margin: 0 0 30px;
+  border: 1px solid #EAEEF3;
+  border-top: 5px solid #003DA6;
+  border-radius: 3px;
+  label {
+    width: 100%;
+    display: block;
+    margin: 0;
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #EAEEF3;
+      border-radius: 0;
+      background: #FFFFFF;
+      height: 258px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
 
+  }
 
+  button {
+    width: 220px;
+    font-size: 19px;
+  }
+}
+
+.form-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.history-chating {
+
+  .history-orders__details-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 -2px;
+    position: relative;
+    z-index: 1;
+    .chating-val {
+      font-size: 14px;
+      margin: 0 57px 0 0;
+    }
+  }
+}
+
+.history-chating__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #58595B;
+}
+
+.history-chating__body {
+  width: 100%;
+  border: 1px solid #EAEEF3;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.history-chating__box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 18px 25px 0 20px;
+
+  &:last-child {
+    .history-chating__content {
+      border: none;
+    }
+  }
+}
+
+.history-chating__content {
+  width: calc(100% - 80px);
+  padding: 0 0 20px;
+  border-bottom: 1px solid #EAEEF3;
+}
+
+.history-chating__content-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 16px;
+}
+
+.history-chating__content-title {
+  font-weight: bold;
+}
+
+.history-chating__content-date {
+  font-size: 14px;
+}
+
+.history-chating__content-text p {
+  margin: 0;
+}
 
 @media screen and (max-width: 1199px) {
   .cabinet-box {
@@ -808,6 +917,13 @@ svg path {
     margin: 0 20px 0 0;
   }
 
+  .form-cabinet-callback label textarea {
+    height: 200px;
+  }
+
+  .history-chating .history-orders__details-title .chating-val {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -868,6 +984,23 @@ svg path {
 
   .cabinet-box__contacts {
     margin: 0 0 40px;
+  }
+
+  .history-chating__content {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+
+  .history-chating__avatar {
+    margin: 0 auto;
+  }
+
+  .history-chating__content-line {
+    flex-direction: column;
+  }
+
+  .history-chating__content-text {
+    font-size: 14px;
   }
 }
 
